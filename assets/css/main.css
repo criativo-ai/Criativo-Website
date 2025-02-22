@@ -2483,6 +2483,7 @@ b {
 	WIDTH: 87%;
     FLOAT: RIGHT;
 }
+<<<<<<< HEAD
 }
 
 #readMoreBtn {
@@ -2492,6 +2493,8 @@ b {
     border-radius: 4px;
     margin-top: 11px;
     display: inline-block;
+=======
+>>>>>>> 1cb2dbeb7fa3bb563d3f035b83e0d5d847329592
 }
 
 
