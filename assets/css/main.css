@@ -14,6 +14,7 @@
   --accent-color: #318d88; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --bs-body-font-size: 13px !important;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -737,10 +738,10 @@ section,
 
 .hero .hero-content h1 {
   font-size: 3.1rem;
-    font-weight:600;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    letter-spacing: -3px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  letter-spacing: -3px;
 }
 
 .hero .hero-content h1 .accent-text {
@@ -1252,7 +1253,7 @@ section,
 }
 
 .features .tab-pane ul i {
-  font-size: 20px;
+  font-size: 16px;
   padding-right: 4px;
   color: var(--accent-color);
 }
@@ -2395,16 +2396,14 @@ section,
 }
 .small-border h4 {
   font-size: 13px;
-    margin: 0;
-    line-height: 17px;
-    
+  margin: 0;
+  line-height: 17px;
 }
 .small-border i {
   font-size: 15px;
-    margin: 0;
-    line-height: 17px;
-    color: var(--heading-color);
-    
+  margin: 0;
+  line-height: 17px;
+  color: var(--heading-color);
 }
 
 .small-border p {
@@ -2418,10 +2417,8 @@ section,
 .bg-icon {
   width: 30px;
   height: 30px;
-  background: 
-color-mix(in srgb, var(--accent-color), transparent 90%);
-  display: flex
-;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0;
@@ -2432,48 +2429,53 @@ color-mix(in srgb, var(--accent-color), transparent 90%);
   padding: 0;
 }
 .features .col-lg-6 {
-    align-self: center;
+  align-self: center;
 }
 .features .img-fluid {
-    border-radius: 32px;
-    border: 9px #fff solid;
-    box-shadow: 0px 0px 7px 0px #c9cfcf;
+  border-radius: 32px;
+  border: 9px #fff solid;
+  box-shadow: 0px 0px 7px 0px #c9cfcf;
 }
 .fst-italic {
-    font-weight: 600;
-    color: var(--heading-color);
-    font-size: 18px;
+  font-weight: 600;
+  color: var(--heading-color);
+  font-size: 18px;
+      margin-bottom: 5px;    
 }
 .white_logo {
-    padding-top: 22px;
-    width: 226px;
+  padding-top: 22px;
+  width: 226px;
 }
 .lead {
-    font-weight: 400;
-    letter-spacing: -1.5px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
 }
-/* .btn-group {
-  background-color: var(--accent-color) !important;
-  border-color: color-mix(
-    in srgb,
-    var(--default-color),
-    transparent 50%
-  ) !important;
+b {
+  font-weight: 600;
 }
-.btn-group i {
-  color: #fff !important ;
+@media (max-width:991px ) {
+    
+    .contact-form {
+        padding-top: 85px!important;
+      
 }
-.btn-group button {
-  border-color: color-mix(
-    in srgb,
-    var(--default-color),
-    transparent 96%
-  ) !important;
+    
 }
-.btn-group .btn:hover {
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
-  color: var(--heading-color) !important;
+    
+
+/* read more button expantion */
+@media(max-width:991px){
+    .hidden-content {
+        display: none;
+    }
+    
 }
-.btn-group .btn:hover i {
-  color: #fff !important;
-} */
+
+@media (min-width: 991px) {
+  .read_bt {
+    display: none;
+    border: 1px red solid;
+  }
+}
+
+
