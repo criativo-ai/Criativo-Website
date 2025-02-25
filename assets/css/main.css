@@ -2454,15 +2454,7 @@ section,
 b {
   font-weight: 600;
 }
-@media (max-width:991px ) {
-    
-    .contact-form {
-        padding-top: 85px!important;
-      
-}
 
-    
-}
     
 
 /* read more button expantion */
@@ -2516,3 +2508,9 @@ b {
 
 
 }
+/*
+@media (max-width: 991px) {
+    .contact-form {
+        margin-top: 155px!important;
+    }
+}*/
