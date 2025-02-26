@@ -715,10 +715,10 @@ section,
     transparent 50%
   );
 }
-@media(max-width:991px) {
-    .hero {
-        padding-top: 100px;
-    }
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 100px;
+  }
 }
 
 .hero::before {
@@ -838,7 +838,7 @@ section,
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  max-width: 420px;
   animation: float-badge 3s ease-in-out infinite;
   will-change: transform;
 }
@@ -2478,8 +2478,6 @@ b {
   .read_bt {
     display: none;
   }
-
-  
 }
 
 #readMoreBtn {
@@ -2581,6 +2579,27 @@ kumar sir css
   margin: auto;
 }
 
+.green-line2 h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.green-line2 h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+
+  bottom: 0;
+  margin: auto;
+}
+
 .testimonials .testimonial-item {
   box-shadow: none;
   display: flex;
@@ -2631,21 +2650,25 @@ kumar sir css
 }
 
 /* new 26/02/2025 */
-.carousel img {
+.Testimonials_card .col-md-6,
+.Testimonials_card .card {
+  min-height: 222px;
+}
+.tlogo {
   width: 55px;
- height: auto;
+  height: auto;
   border-radius: 50%;
   margin-right: 1rem;
   overflow: hidden;
 }
 .userPhoto {
-width: 150px !important;
-    max-height: auto !important;
-    border-radius: 50% !important;
-    margin-right: 1rem !important;
-    overflow: hidden !important;
-    border: 1px #f6f6f7 solid;
-    padding: 5px;
+  width: 150px !important;
+  max-height: auto !important;
+  border-radius: 50% !important;
+  margin-right: 1rem !important;
+  overflow: hidden !important;
+  border: 1px #f6f6f7 solid;
+  padding: 5px;
 }
 .carousel-inner {
   padding: 1em;
@@ -2654,8 +2677,8 @@ width: 150px !important;
 @media screen and (min-width: 576px) {
   .carousel-inner {
     display: flex;
-/*    width: 90%;*/
-      width: 100%;
+    /*    width: 90%;*/
+    width: 100%;
     margin-inline: auto;
     padding: 1em 0;
     overflow: hidden;
@@ -2688,13 +2711,30 @@ width: 150px !important;
   transform: translateY(-50%);
 }
 .user_txt {
-    margin-bottom: -6px;
-    font-weight: 600;
+  margin-bottom: -6px;
+  font-weight: 600;
 }
 .insName {
-    margin-top: -2px;
+  margin-top: -2px;
 }
 .newBt {
-background-color:#3c938e!important;
-border: 1px #3c938e solid!important;
+  background-color: #3c938e !important;
+  border: 1px #3c938e solid !important;
+}
+.topLogo {
+  height: 45px;
+  float: right;
+}
+@media (max-width: 991px) {
+  .topLogo {
+    display: none !important;
+  }
+}
+.contactBg {
+  background: linear-gradient(
+    225deg,
+    color-mix(in srgb, var(--accent-color), transparent 95%) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 98%) 25%,
+    transparent 50%
+  );
 }
