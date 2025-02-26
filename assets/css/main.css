@@ -14,7 +14,6 @@
   --accent-color: #318d88; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
- 
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -63,7 +62,7 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 30%) !important;
   text-decoration: none;
 }
 
@@ -142,14 +141,15 @@ h6 {
 }
 
 .header .header-container {
-  background: var(--surface-color);
+  background: var(--accent-color);
   border-radius: 0px;
   padding: 5px 25px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 .scrolled .header .header-container {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: color-mix(in srgb, var(--accent-color), transparent 5%);
 }
 
 .header .logo {
@@ -235,7 +235,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--contrast-color);
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -262,7 +262,7 @@ h6 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--contrast-color);
   }
 
   .navmenu .dropdown ul {
@@ -325,7 +325,7 @@ h6 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--contrast-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -714,6 +714,11 @@ section,
     color-mix(in srgb, var(--accent-color), transparent 98%) 25%,
     transparent 50%
   );
+}
+@media(max-width:991px) {
+    .hero {
+        padding-top: 100px;
+    }
 }
 
 .hero::before {
@@ -2429,19 +2434,26 @@ section,
   padding: 0;
 }
 
-.features .img-fluid {
+/* .features .img-fluid {
+  border-radius: 32px;
+  border: 9px #fff solid;
+  box-shadow: 0px 0px 7px 0px #c9cfcf;
+} */
+
+.picBg {
   border-radius: 32px;
   border: 9px #fff solid;
   box-shadow: 0px 0px 7px 0px #c9cfcf;
 }
+
 .fst-italic {
   font-weight: 600;
   color: var(--heading-color);
   font-size: 18px;
-      margin-bottom: 10px;    
+  margin-bottom: 10px;
 }
 #features .fst-italic {
-	margin-bottom:30px;
+  margin-bottom: 30px;
 }
 .white_logo {
   padding-top: 22px;
@@ -2455,62 +2467,234 @@ b {
   font-weight: 600;
 }
 
-    
-
 /* read more button expantion */
-@media(max-width:991px){
-    .hidden-content {
-        display: none;
-    }
-    
+@media (max-width: 991px) {
+  .hidden-content {
+    display: none;
+  }
 }
 
 @media (min-width: 991px) {
   .read_bt {
     display: none;
-    
   }
+
   
-  .features .img-fluid {
-	WIDTH: 87%;
-    FLOAT: RIGHT;
-}
-<<<<<<< HEAD
 }
 
 #readMoreBtn {
-	Color: #318d88 !important;
-    border: 1px #267470 solid;
-    padding: 2px 11px;
-    border-radius: 4px;
-    margin-top: 11px;
-    display: inline-block;
-=======
->>>>>>> 1cb2dbeb7fa3bb563d3f035b83e0d5d847329592
+  color: #318d88 !important;
+  border: 1px #267470 solid;
+  padding: 2px 11px;
+  border-radius: 4px;
+  margin-top: 11px;
+  display: inline-block;
 }
-
-
 
 #features .readMoreBtn {
-	margin-top:15px;
-	    display: block;
+  margin-top: 15px;
+  display: block;
 }
-
-
 
 .readMoreBtn {
-	Color: #318d88 !important;
-    border: 1px #267470 solid;
-    padding: 2px 11px;
-    border-radius: 4px;
-    margin-top: 11px;
-    display: inline-block;
+  color: #318d88 !important;
+  border: 1px #267470 solid;
+  padding: 2px 11px;
+  border-radius: 4px;
+  margin-top: 11px;
+  display: inline-block;
+}
 
-
+.video_main_warper {
+  width: 80%;
+  background: #fff;
+  padding: 7px 7px 0px 7px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px #cccccc38 solid;
+}
+iframe {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 /*
-@media (max-width: 991px) {
-    .contact-form {
-        margin-top: 155px!important;
-    }
+kumar sir css
 }*/
+
+.video-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 640px;
+  height: 360px;
+}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.iframe-container {
+  display: none;
+}
+
+.testimonial-item {
+  text-align: center;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  float: none;
+  width: 220px;
+  height: auto;
+  border-radius: 50%;
+}
+.green-line h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.green-line h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.testimonials .testimonial-item {
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.testimonial-img {
+  float: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.quote-icon-left,
+.quote-icon-right {
+  color: #999;
+  font-size: 12px;
+}
+
+/* new 26/02/2025 */
+.carousel img {
+  width: 55px;
+ height: auto;
+  border-radius: 50%;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+.userPhoto {
+width: 150px !important;
+    max-height: auto !important;
+    border-radius: 50% !important;
+    margin-right: 1rem !important;
+    overflow: hidden !important;
+    border: 1px #f6f6f7 solid;
+    padding: 5px;
+}
+.carousel-inner {
+  padding: 1em;
+}
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+/*    width: 90%;*/
+      width: 100%;
+    margin-inline: auto;
+    padding: 1em 0;
+    overflow: hidden;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 1);
+  }
+}
+.carousel .card {
+  margin: 0 0.5em;
+  border: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3rem;
+  height: 3rem;
+  background-color: grey;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.user_txt {
+    margin-bottom: -6px;
+    font-weight: 600;
+}
+.insName {
+    margin-top: -2px;
+}
+.newBt {
+background-color:#3c938e!important;
+border: 1px #3c938e solid!important;
+}
