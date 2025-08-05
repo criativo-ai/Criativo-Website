@@ -2740,7 +2740,7 @@ kumar sir css
 }
 /*social media icons style*/
 .wrapper_main {
-   left: 30px;
+   left: 33px;
    background-color:#eff6f6;
    z-index:1000;
 }
@@ -2774,7 +2774,7 @@ kumar sir css
   justify-content: center;
   align-items: center;    */
 padding-left:30px;
-padding-right:30px;
+padding-right:24px;
 padding-top:5px;
 padding-bottom:5px;
 }
@@ -2844,3 +2844,37 @@ padding-bottom:5px;
   color: #ffffff;
 }
 /*end*/
+.stat-icon {
+    /* flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: 
+    color-mix(in srgb, var(--accent-color), transparent 92%);
+    border-radius: 50px;
+    transition: 0.3s; */
+}
+.stat-icon i {
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+.sbt {
+ color: var(--accent-color)!important;
+}
+.nfrm {
+  background: transparent;
+  border: 1px solid rgba(256,256,256,0.5);
+  height: 43px;
+}
+input.nletter::placeholder {
+  color: #fff;
+}
+ @media (max-width: 767px) {
+    .sbt {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
