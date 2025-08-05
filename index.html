@@ -82,7 +82,7 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#features">Products</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <!-- <li><a href="#">News</a></li>     -->
+          <li><a href="#" target="_blank">Criativo / Blog</a></li>     
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -727,10 +727,14 @@
                   <p>
                     <form action="https://formspree.io/f/your-form-id" method="POST">
                       <label for="email" class="form-label">Subscribe to our Newsletter</label>
-                       <div class="d-md-flex align-items-center gap-2">
-                      <input type="email" name="subscribeemail" id="subscribeemail" placeholder="Enter your email" required class="form-control flex-grow-1 nfrm nletter">
+                       <div class="d-md-flex align-items-center gap-2 w-100">
+                      <div id="subscribeRow" class="flex-grow-1">
+                        <input type="email" name="subscribeemail" id="subscribeemail" placeholder="Enter your email" required class="form-control  nfrm nletter" />
+ 
+                      </div>
                       <button type="button" class="btn py-2 sbt bg-white hstack gap-1 fw-semibold justify-content-center shadow" onclick="subscribemailchat()"><span>Subscribe</span></button>
                       </div>
+                       <div id="subscribeemailError" style="color:#c00;font-size:0.9rem;display:none;margin-top:6px;opacity:0.8;white-space:prelipre-line;word-break:break-all;"></div>
                     </form>
                   </p>
                 </div>
@@ -846,42 +850,61 @@
     });
 
     async function subscribemailchat() {
-  const submail = document.getElementById('subscribeemail').value.trim();
+          const input = document.getElementById('subscribeemail');
+          const submail = input.value.trim();
+          const errorEl = document.getElementById('subscribeemailError');
 
-  if (!submail) {
-    alert("Please enter your email.");
-    return;
-  }
+          // regex: fairly strict but simple
+          const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  const payload = {
-    text: `New Subscription from *${submail}*`
-  };
+          // Clear previous error
+          errorEl.style.display = "none";
+          errorEl.innerText = "";
 
-  const url = "https://chat.googleapis.com/v1/spaces/AAQAhvxXkTM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=TrOhspca7RLlysAj8PZv_WSt5cYQjj2buXkwWpyeVy4"; // Replace with your webhook URL
+          // Basic empty check
+          if (!submail) {
+            errorEl.innerText = "Please enter your email.";
+            errorEl.style.display = "block";
+            input.focus();
+            return;
+          }
 
-  try {
+          // Regex validation
+          if (!emailPattern.test(submail)) {
+            errorEl.innerText = "Please enter a valid email address.";
+            errorEl.style.display = "block";
+            input.focus();
+            return;
+          }
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(payload)
-    });
+          // Passed validation — show a loading indicator if you have one
+          const loading = document.querySelector(".loading");
+          if (loading) loading.style.display = "block";
 
+          const payload = { text: `New Subscription from *${submail}*` };
+          const url = "https://chat.googleapis.com/v1/spaces/AAQAhvxXkTM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=TrOhspca7RLlysAj8PZv_WSt5cYQjj2buXkwWpyeVy4"; // your webhook
 
-    if (response.ok) {
-      alert('Your email has been subscribed to Criativo.ai');
-      document.getElementById('subscribeemail').value = ""; // Clear input
-    } else {
-      const errorText = await response.text();
-      alert("Failed to send message. " + errorText);
-    }
-  } catch (error) {
-    document.querySelector(".loading").style.display = "none"; // Hide loading
-    alert("Error: " + error.message);
-  }
-}
+          try {
+            const response = await fetch(url, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+              alert('Your email has been subscribed to Criativo.ai');
+              input.value = "";
+            } else {
+              const errorText = await response.text();
+              alert("Failed to send message. " + errorText);
+            }
+          } catch (error) {
+            alert("Error: " + error.message);
+          } finally {
+            if (loading) loading.style.display = "none";
+          }
+        }
+
 
   </script>
 
@@ -903,6 +926,9 @@
           hiddenContent.style.display = "none";
           this.innerText = "Read More";
         }
+
+        
+
       });
     });
   </script>
