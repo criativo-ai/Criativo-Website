@@ -2742,7 +2742,7 @@ kumar sir css
 .wrapper_main {
    left: 33px;
    background-color:#eff6f6;
-   z-index:1000;
+   z-index:3;
 }
 @media(max-width:767px) {
 	.wrapper_main {
