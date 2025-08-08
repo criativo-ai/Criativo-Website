@@ -61,10 +61,10 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
+/* a:hover {
   color: color-mix(in srgb, var(--contrast-color), transparent 30%) !important;
   text-decoration: none;
-}
+} */
 
 h1,
 h2,
