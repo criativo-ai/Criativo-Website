@@ -131,6 +131,13 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+.outline {
+    font-size: inherit !important;
+    border: 1px #318d88 solid!important;
+    color: #318d88!important;
+}
+
 .header {
   --background-color: rgba(255, 255, 255, 0);
   color: var(--default-color);
@@ -2856,6 +2863,9 @@ padding-bottom:5px;
     border-radius: 50px;
     transition: 0.3s; */
 }
+.theme_bg {
+  background-color: #318d88!important;
+}
 .stat-icon i {
     font-size: 4rem;
     color: var(--accent-color);
@@ -2884,7 +2894,11 @@ input.nletter::placeholder {
   color: #fff;
 }
  @media (max-width: 767px) {
-    .sbt {
+  .w-md-100 {
+    width: 100%;
+  }  
+  
+  .sbt {
       width: 100%;
       text-align: center;
       margin-top: 20px;
@@ -2894,3 +2908,4 @@ input.nletter::placeholder {
   .smeddia {
     font-size: 30px;
   }
+  
