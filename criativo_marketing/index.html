@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Criativo Global">
+  <meta property="og:description"
+    content="Empowering Education, Elevating Futures-Transforming Institutions with Scalable, Innovative Solutions.">
+  <meta property="og:image" content="https://criativo.ai/assets/thumbnail.jpg">
+  <meta property="og:url" content="https://criativo.ai">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="analysis, abhyas, digival">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card"
+    content="Empowering Education, Elevating Futures-Transforming Institutions with Scalable, Innovative Solutions.">
+  <meta name="twitter:title" content="Criativo Global">
+  <meta name="twitter:description"
+    content="Empowering Education, Elevating Futures-Transforming Institutions with Scalable, Innovative Solutions.">
+  <meta name="twitter:image" content="https://criativo.ai/assets/thumbnail.jpg">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CRIATIVO</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="h-100 d-flex flex-column justify-content-center align-items-center">
+  <div class="main_form">
+    <div class="shadow-lg main_warper p-4">
+      <div class="text-center theme_color small" id="stepIndicator">
+        1 of 4
+      </div>
+
+      <aside class="lp_warper">
+        <!-- Step 1: Name -->
+        <div class="form-step active" id="step1">
+          <form id="nameForm">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="form-label theme_color hdng_font">
+                  Name<span class="mandatory">*</span>
+                </label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                <button type="button" id="nextToEmail" class="btn bt_sm  mt-3">Next</button>
+                <p id="nameErrorMsg" style="color:red; margin-top:10px;text-align: center;"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 2: Email -->
+        <div class="form-step" id="step2">
+          <form id="emailForm">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="form-label theme_color hdng_font">
+                  Email ID<span class="mandatory">*</span>
+                </label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email ID" required>
+                <div class="d-flex w-100 gap-3 mt-3">
+                  <button type="button" class="btn bt_grey w-50" id="backToName">Back</button>
+                  <button type="button" id="nextToPhone" class="btn bt_sm w-50">Next</button>
+                </div>
+                <p id="emailErrorMsg" style="color:red; margin-top:10px;text-align: center;"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 3: Phone -->
+        <div class="form-step" id="step3">
+          <form id="phoneForm">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="form-label theme_color hdng_font">Phone Number</label>
+                <div class="hstack gap-2">
+                  <!-- <select id="countryCode" class="form-select w-auto">
+                    <option>+91</option>
+                  </select> -->
+                  <select id="countryCode" class="form-select w-auto">
+                  <option value="+91">India (+91)</option>
+                  <option value="+971">UAE (+971)</option>
+                </select>
+
+                  <input type="text" id="phone" class="form-control flex-grow-1" placeholder="Enter your phone number"
+                    required>
+                </div>
+                <div class="d-flex w-100 gap-3 mt-3">
+                  <button type="button" class="btn bt_grey w-50" id="backToEmail">Back</button>
+                  <button type="button" id="nextToHomeschool" class="btn bt_sm w-50">Next</button>
+                </div>
+                <p id="phoneErrorMsg" style="color:red; margin-top:10px;text-align: center;"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Step 4: Homeschool Form -->
+        <div class="form-step" id="step4">
+          <form id="homeschoolForm">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="form-label theme_color hdng_font">
+                  Are your children homeschooled?<span class="mandatory">*</span>
+                </label>
+
+                <aside id="radioContainer" class="d-flex justify-content-center flex-column align-items-start mt-4">
+                </aside>
+
+                <div class="d-flex w-100 gap-3 mt-3">
+                  <button type="button" class="btn bt_grey w-50" id="backToPhone">Back</button>
+                  <button type="button" id="submitAll" class="btn bt_sm w-50">Submit</button>
+                </div>
+                <p id="homeschoolErrorMsg" style="color:red; margin-top:10px;text-align: center;"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+
+      </aside>
+
+      <!-- Step 5: Thank You Message -->
+      <!-- <div class="form-step" id="step5" style="display: none;">
+  <div class="largeHdng mbg h-100 d-flex flex-column justify-content-center align-items-center w-100 theme_bg">
+    <div>Thank you very much for your response!</div>
+    <div>We’ll be in touch.</div>
+  </div>
+</div> -->
+
+      <div class="pageNation d-flex justify-content-center mt-5">
+        <ul class="list-unstyled d-flex gap-4 pagination_lp">
+          <li><i class="bi bi-circle-fill active" id="page1"></i></li>
+          <li><i class="bi bi-circle-fill" id="page2"></i></li>
+          <li><i class="bi bi-circle-fill" id="page3"></i></li>
+          <li><i class="bi bi-circle-fill" id="page4"></i></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script>
+    // API URL
+    // const apiUrl = "https://chat.googleapis.com/v1/spaces/AAQAhvxXkTM/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=TrOhspca7RLlysAj8PZv_WSt5cYQjj2buXkwWpyeVy4";
+    const apiUrl = "https://chat.googleapis.com/v1/spaces/AAQAcgLaK9E/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=sMz1HmC0yLbKjW8-KcVql7TGqlr0FYGeZXoI38q8N7w"
+    // local url// const apiUrl = "https://chat.googleapis.com/v1/spaces/AAAAbdR354Q/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=MAsazdSsxeR0JJS3Q3QzNBTZKY3XbsYJhykBgyzKTxA";
+    // Store form data
+    // Store form data
+    const formData = {
+      name: '',
+      email: '',
+      phone: '',
+      countryCode: '+91',
+      homeschool: ''
+    };
+
+    // Track current step
+    let currentStep = 1;
+
+    // Show step function
+    function goToStep(stepNumber) {
+      currentStep = stepNumber;
+
+      document.querySelectorAll('.form-step').forEach(step => step.style.display = 'none');
+      document.getElementById(`step${stepNumber}`).style.display = 'block';
+
+      document.getElementById('stepIndicator').textContent = `${stepNumber} of 4`;
+
+      document.querySelectorAll('.pagination_lp i').forEach((icon, index) => {
+        icon.classList.toggle('active', index + 1 === stepNumber);
+      });
+    }
+
+    // Initialize first step
+    goToStep(1);
+
+    // Navigation
+    document.getElementById('nextToEmail').addEventListener('click', function () {
+      const name = document.getElementById('name').value.trim();
+      if (name.length < 3 || name.length > 20 || /[^a-zA-Z\s]/.test(name)) {
+        document.getElementById('nameErrorMsg').textContent = "Please enter a valid full name (3–20 letters).";
+        return;
+      }
+      document.getElementById('nameErrorMsg').textContent = "";
+      formData.name = name;
+      goToStep(2);
+    });
+
+    document.getElementById('backToName').addEventListener('click', () => goToStep(1));
+
+    document.getElementById('nextToPhone').addEventListener('click', function () {
+      const email = document.getElementById('email').value.trim();
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regex.test(email)) {
+        document.getElementById('emailErrorMsg').textContent = "Please enter a valid email address.";
+        return;
+      }
+      document.getElementById('emailErrorMsg').textContent = "";
+      formData.email = email;
+      goToStep(3);
+    });
+
+    document.getElementById('backToEmail').addEventListener('click', () => goToStep(2));
+
+    document.getElementById('nextToHomeschool').addEventListener('click', function () {
+      const phone = document.getElementById('phone').value.trim();
+      const countryCode = document.getElementById('countryCode').value;
+      if (!/^\d{10}$/.test(phone)) {
+        document.getElementById('phoneErrorMsg').textContent = "Please enter a valid 10-digit mobile number.";
+        return;
+      }
+      document.getElementById('phoneErrorMsg').textContent = "";
+      formData.phone = phone;
+      formData.countryCode = countryCode;
+      goToStep(4);
+    });
+
+    document.getElementById('backToPhone').addEventListener('click', () => goToStep(3));
+
+    const homeschoolOptions = [
+      { id: "yes", label: "Yes" },
+      { id: "no", label: "No" },
+      { id: "considering", label: "I’m considering" },
+      { id: "noChildren", label: "I don’t have any children" }
+    ];
+
+    // Render radios dynamically
+    const radioContainer = document.getElementById("radioContainer");
+    homeschoolOptions.forEach(opt => {
+      const div = document.createElement("div");
+      div.className = "mb-3 form-check";
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.className = "form-check-input custom-radio";
+      input.id = opt.id;
+      input.name = "homeschool";
+      input.value = opt.label;
+
+      const label = document.createElement("label");
+      label.className = "form-check-label";
+      label.setAttribute("for", opt.id);
+      label.textContent = opt.label;
+
+      div.appendChild(input);
+      div.appendChild(label);
+      radioContainer.appendChild(div);
+    });
+
+    // Final submit
+    document.getElementById('submitAll').addEventListener('click', function () {
+      const selected = document.querySelector('input[name="homeschool"]:checked');
+      if (!selected) {
+        document.getElementById('homeschoolErrorMsg').textContent = "Please select an option.";
+        return;
+      }
+
+      document.getElementById('homeschoolErrorMsg').textContent = "";
+      formData.homeschool = selected.value;
+
+      const payload = {
+        text: `User Info:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.countryCode} ${formData.phone}\nHomeschooled children: ${formData.homeschool}`
+      };
+
+      fetch(apiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log("Message sent:", data);
+
+          // Optional: reset all forms
+          document.getElementById('nameForm').reset();
+          document.getElementById('emailForm').reset();
+          document.getElementById('phoneForm').reset();
+          document.getElementById('homeschoolForm').reset();
+
+          // Redirect to index5 page after successful response
+          window.location.href = "thankyou_page.html"; // replace with your actual page URL
+        })
+        .catch(error => {
+          console.error("Error sending data:", error);
+          alert("Failed to send data. Please try again.");
+        });
+    });
+  </script>
+</body>
+</html>

@@ -2866,6 +2866,9 @@ padding-bottom:5px;
 .theme_bg {
   background-color: #318d88!important;
 }
+.theme_color {
+  color: #318d88!important;
+}
 .stat-icon i {
     font-size: 4rem;
     color: var(--accent-color);
@@ -2908,4 +2911,99 @@ input.nletter::placeholder {
   .smeddia {
     font-size: 30px;
   }
-  
+  /* lpstyle */
+  .pagination_lp  {
+    margin: 0!important;
+  }
+  .pagination_lp i {
+    color:#d8d8d8!important;
+    font-size: 11px;
+  }
+   .pagination_lp .active {
+    color:#318d88!important;
+  }
+  .lp_warper {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow:rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+  }
+  .bt_sm {
+   background: #318d88;
+    color: #fff;
+    min-height: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  .bt_sm_secondary {
+   background: #c9cfcf;
+    color: #000;
+    min-height: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .lp_warper .form-control, .lp_warper .form-select {
+    min-height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 33px;
+}
+ .bt_sm:hover {
+     background: #24817b!important;
+     color: #fff!important;
+
+ }
+   .bt_sm_secondary:hover {
+    background: #dcdcdc!important;
+     color: #000!important;
+
+   }
+   .lp_warper span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Hide default radio */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;       /* Increase width */
+  height: 18px;      /* Increase height */
+  border: 1px solid #555;   /* Border color */
+  border-radius: 50%; /* Make it round */
+  outline: none;
+  cursor: pointer;
+  position: relative;
+
+}
+
+/* When checked */
+.form-check-label {
+  cursor: pointer;
+}
+.custom-radio:checked {
+  background-color: #318d88; /* Custom checked color */
+  border-color: #318d88;
+}
+
+/* Add inner dot */
+.custom-radio:checked::before {
+  content: "";
+  position: absolute;
+  top: 5px;   /* Adjust for center */
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
