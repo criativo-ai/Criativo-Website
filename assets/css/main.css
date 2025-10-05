@@ -3007,3 +3007,30 @@ input.nletter::placeholder {
   background: white;
   border-radius: 50%;
 }
+ /* pdf block */
+ 
+ .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: #ccc; */
+  /* border-radius: 12px; */
+  /* padding: 10px; */
+  /* margin: 10px; */
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+  /* transition: transform 0.2s ease; */
+}
+.card:hover {
+  /* transform: translateY(-4px); */
+}
+.card .heading {
+font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px #ccc solid;
+    /* margin-bottom: 6px; */
+    /* letter-spacing: 0.5px; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}

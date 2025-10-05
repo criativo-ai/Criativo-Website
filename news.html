@@ -158,21 +158,24 @@
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
             <script>
-              // Updated PDF items with more reliable URLs
               const PDF_ITEMS = [
 
-                {
-                  title: 'Criativo Global Back To School Newsletter',
-                  url: 'pdfs/newsletter1.pdf'
+              {
+                heading: 'OCT-25', 
+                title: 'Criativo Global Newsletter Beyond the Hype: Real Applications of AI in Education',
+                  url: 'pdfs/Criativo_Newsletter_003.pdf'
                 },
 
                 {
+                  heading: 'SEP-25',
                   title: 'Criativo Global Newsletter From Chalkboards To Ecosystems',
                   url: 'pdfs/Criativo-Newsletter-09_25_002.pdf'
                 },
+
                 {
-                  title: 'Criativo Global Newsletter Beyond the Hype: Real Applications of AI in Education',
-                  url: 'pdfs/Criativo_Newsletter_003.pdf'
+                   heading: 'AUG-25',
+                  title: 'Criativo Global Back To School Newsletter',
+                  url: 'pdfs/newsletter1.pdf'
                 },
               ];
 
@@ -223,7 +226,13 @@
               async function makeCard(item, index) {
                 const card = document.createElement('div');
                 card.className = 'card';
-
+                // 📅 Add heading (like AUG-25)
+  if (item.heading) {
+    const heading = document.createElement('div');
+    heading.className = 'heading';
+    heading.textContent = item.heading;
+    card.appendChild(heading);
+  }
                 const thumb = document.createElement('div');
                 thumb.className = 'thumb';
 
@@ -239,7 +248,9 @@
                 h3.textContent = item.title;
                 const small = document.createElement('small');
                 small.textContent = item.url;
+                
                 meta.appendChild(h3);
+                
                 meta.appendChild(small);
 
                 card.appendChild(thumb);
