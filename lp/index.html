@@ -335,54 +335,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
 
-    // document.getElementById('submitAll').addEventListener('click', () => {
-    //   const selected = document.querySelector('input[name="homeschool"]:checked');
-    //   if (!selected) {
-    //     document.getElementById('homeschoolErrorMsg').textContent = "Please select an option.";
-    //     return;
-    //   }
-
-    //   document.getElementById('homeschoolErrorMsg').textContent = "";
-    //   formData.homeschool = selected.value;
-    //   const now = new Date();
-    //   const formattedDate = now.getFullYear() + '-' +
-    //     String(now.getMonth() + 1).padStart(2, '0') + '-' +
-    //     String(now.getDate()).padStart(2, '0') + ' ' +
-    //     String(now.getHours()).padStart(2, '0') + ':' +
-    //     String(now.getMinutes()).padStart(2, '0') + ':' +
-    //     String(now.getSeconds()).padStart(2, '0');
-
-    //   const payload = {
-    //     name: formData.name,
-    //     email: formData.email,
-    //     phone: formData.phone,
-    //     homeschool: formData.homeschool,
-    //     dateTime: formattedDate
-    //   };
-
-    //   console.log("Payload:", payload);
-
-    //   fetch(apiUrl, {
-    //     method: "POST",
-    //     mode: "no-cors", // <-- allows sending to Apps Script without CORS errors
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(payload)
-    //   })
-    //     .then(() => {
-    //       // Reset forms
-    //       document.getElementById('nameForm').reset();
-    //       document.getElementById('emailForm').reset();
-    //       document.getElementById('phoneForm').reset();
-    //       document.getElementById('homeschoolForm').reset();
-    //       window.location.href = "thankyou_page.html";
-    //     })
-    //     .catch(err => {
-    //       console.error(err);
-    //       alert("Failed to send data. Make sure the script is deployed as 'Anyone, even anonymous'.");
-    //     });
-
-
-    // });
 
   </script>
 

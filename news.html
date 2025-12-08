@@ -159,6 +159,20 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
             <script>
               const PDF_ITEMS = [
+			  
+			  
+			  {
+                heading: 'DEC-25', 
+                title: 'Education with Purpose: Building Trust with Parents & Students',
+                  url: 'pdfs/December Newsletter.pdf'
+                },
+				
+				
+				{
+                heading: 'NOV-25', 
+                title: 'The tuition gap',
+                  url: 'pdfs/November Newsletter.pdf'
+                },
 
               {
                 heading: 'OCT-25', 
@@ -173,7 +187,7 @@
                 },
 
                 {
-                   heading: 'AUG-25',
+                  heading: 'AUG-25',
                   title: 'Criativo Global Back To School Newsletter',
                   url: 'pdfs/newsletter1.pdf'
                 },
@@ -227,12 +241,12 @@
                 const card = document.createElement('div');
                 card.className = 'card';
                 // 📅 Add heading (like AUG-25)
-  if (item.heading) {
-    const heading = document.createElement('div');
-    heading.className = 'heading';
-    heading.textContent = item.heading;
-    card.appendChild(heading);
-  }
+                if (item.heading) {
+                const heading = document.createElement('div');
+                heading.className = 'heading';
+                heading.textContent = item.heading;
+                card.appendChild(heading);
+                }
                 const thumb = document.createElement('div');
                 thumb.className = 'thumb';
 
