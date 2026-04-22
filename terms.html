@@ -2,6 +2,179 @@
 <html lang="en">
 
 <head>
+  <style>
+    /* header / hero section */
+    .legal-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e8e8ec;
+      padding-bottom: 2rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .logo-marker {
+      width: 32px;
+      height: 32px;
+      background: #1e2f3c;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .brand h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1e2f3c;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: #5b6e8c;
+      margin-top: 0.3rem;
+      font-weight: 400;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: #8a99b0;
+      margin-top: 1rem;
+      border-left: 2px solid #dcdce4;
+      padding-left: 0.75rem;
+    }
+
+    /* each terms block */
+    .terms-section {
+      margin-bottom: 2.8rem;
+      scroll-margin-top: 1rem;
+    }
+
+    .terms-section h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #1e2f3c;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1.5px solid #ececf0;
+      display: inline-block;
+    }
+
+    .terms-section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.2rem 0 0.5rem 0;
+      color: #2c3e4e;
+    }
+
+    .terms-section p, .terms-section li {
+      font-size: 0.95rem;
+      color: #2d3a48;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .terms-section ul, .terms-section .list-styled {
+      margin: 0.75rem 0 1rem 1.5rem;
+    }
+
+    .terms-section li {
+      margin-bottom: 0.4rem;
+    }
+
+    .terms-section a {
+      color: #2b6e6f;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5e1;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .terms-section a:hover {
+      color: #1a4e4f;
+      border-bottom-color: #1a4e4f;
+    }
+
+    .highlight-badge {
+      background: #f0f2f5;
+      padding: 0.15rem 0.4rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #2c5f6b;
+      display: inline-block;
+    }
+
+    .sub-section {
+      margin-left: 0.5rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid #eef2f5;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 1px;
+      background: #e8e8ec;
+    }
+
+    .footer-note {
+      margin-top: 3.5rem;
+      padding-top: 1.8rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #7f8c9a;
+      border-top: 1px solid #e8e8ec;
+    }
+
+    .contact-block {
+      background: #f5f7fb;
+      padding: 1.2rem 1.5rem;
+      border-radius: 24px;
+      margin: 2rem 0 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contact-email {
+      font-weight: 600;
+      font-family: monospace;
+      background: #fff;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.8rem 1.2rem 3rem;
+      }
+      .terms-section h2 {
+        font-size: 1.25rem;
+      }
+      .contact-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+
+    /* subtle transition */
+    .terms-section p, .terms-section li {
+      transition: color 0.1s;
+    }
+  </style>
   
   <meta charset="utf-8">
   <meta property="og:title" content="Criativo Global">
@@ -107,118 +280,130 @@
 
               
               <!-- Header -->
-<div class="header">
-  <h1>Terms & Conditions & Privacy Policy</h1>
-  <p>Criativo | <a href="https://criativo.ai" target="_blank" class="text-decoration-underline">
-  criativo.ai
-</a></p>
-  <small>Last updated: April 2026</small>
-</div>
-
-<div class="container  text-start">
-
-  <!-- Section -->
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">1.</span>Acceptance of Terms</h6>
-    <p>
-      By accessing or using the Criativo website or services, you agree to be bound by these Terms and Conditions and Privacy Policy. If you do not agree, please discontinue use.
-    </p>
+<div class="container">
+  <div class="legal-header">
+    
+<h3>TERMS AND CONDITIONS & PRIVACY POLICY</h3>
+<small class="d-block">Criativo | <a href="https://criativo.ai">criativo.ai</a></small>
+<small class="d-block"><span class="fw-semibold">Last updated:</span> April 2026
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">2.</span>About Us</h6>
-    <p>
-      Criativo is a Dubai, UAE-based company specialising in AI-powered educational technology solutions including Abhyas, AnalySIS, and DigiVal.
-    </p>
+  <!-- 1. Acceptance of Terms -->
+  <div class="terms-section" id="acceptance">
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using the Criativo website (<a href="https://criativo.ai" target="_blank">criativo.ai</a>) or using any of our products or services, you agree to be bound by these Terms and Conditions and Privacy Policy. If you do not agree, please discontinue use of our website and services.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">3.</span>Privacy & Data Security</h6>
-
-    <ul>
-      <li><strong>Data Collected:</strong> Name, institution, email, phone, location.</li>
-      <li><strong>Usage:</strong> Enquiries, demos, support, updates.</li>
-      <li><strong>Security:</strong> Protected with technical & organisational measures.</li>
-      <li><strong>Retention:</strong> Stored only as long as necessary.</li>
-      <li><strong>Third-party Links:</strong> Not responsible for external platforms.</li>
-      <li><strong>User Rights:</strong> Access, correction, deletion via info@criativo.ai</li>
-    </ul>
+  <!-- 2. About Us -->
+  <div class="terms-section">
+    <h2>2. About Us</h2>
+    <p>Criativo is a Dubai, UAE-based company specialising in AI-powered educational technology solutions, including a Learning Enhancement System (Abhyas), an Institutional Intelligence Platform (AnalySIS), and a Digital Valuation and Exam Grading tool (DigiVal). Our registered office is located at Dubai International Financial Center, Dubai, UAE.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">4.</span>Products & Services</h6>
-    <p>
-      Products are subject to availability. Criativo may modify or discontinue services at any time. Institutions must verify suitability before onboarding.
-    </p>
+  <!-- 3. Privacy & Data Security (merged elegantly) -->
+  <div class="terms-section">
+    <h2>3. Privacy &amp; Data Security</h2>
+    <p>Criativo is committed to protecting your personal data and respecting your privacy in accordance with applicable data protection laws, including the <strong>UAE Federal Decree-Law No. 45 of 2021</strong> on Personal Data Protection.</p>
+
+    <h3>📘 What data we collect</h3>
+    <p>We may collect personal information including your name, institution name, email address, phone number, and general location when you contact us, submit an enquiry, or request a product demo.</p>
+
+    <h3>🔍 How we use your data</h3>
+    <p>Your data is used solely to respond to your enquiries, process demo requests, provide product support, and communicate relevant product updates. We do not sell, rent, or trade your personal information to third parties.</p>
+
+    <h3>🛡️ How we protect your data</h3>
+    <p>Criativo implements appropriate technical and organisational security measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Access to personal data is restricted to authorised personnel only.</p>
+
+    <h3>⏳ Data retention</h3>
+    <p>We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law.</p>
+
+    <h3>🔗 Third-party services</h3>
+    <p>Our website may contain links to third-party platforms (e.g. LinkedIn, WhatsApp, Instagram). Criativo is not responsible for the privacy practices of those platforms and encourages users to review their respective privacy policies.</p>
+
+    <h3>⚖️ Your rights</h3>
+    <p>You have the right to request access to, correction of, or deletion of your personal data held by Criativo. To exercise these rights, contact us at <a href="mailto:info@criativo.ai">info@criativo.ai</a>.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">5.</span>Pricing & Payment</h6>
-    <p>
-      Pricing is subject to change. Access may be restricted until payment is completed. Taxes are the responsibility of the client.
-    </p>
+  <!-- 4. Products & Services -->
+  <div class="terms-section">
+    <h2>4. Products &amp; Services</h2>
+    <p>All products and services are subject to availability. Criativo reserves the right to modify, limit, or discontinue any product or service at any time. Product specifications and feature descriptions are provided in good faith. Institutions are responsible for ensuring that Criativo's solutions meet their specific operational or regulatory requirements before onboarding. Engagements are confirmed only upon receipt of written confirmation from Criativo.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">6.</span>Onboarding & Delivery</h6>
-    <p>
-      Timelines are estimates. Criativo is not responsible for delays caused by external factors or client infrastructure.
-    </p>
+  <!-- 5. Pricing & Payment -->
+  <div class="terms-section">
+    <h2>5. Pricing &amp; Payment</h2>
+    <p>All prices are quoted in the applicable currency and are subject to change without notice. Payment terms will be agreed upon at the time of engagement. Criativo reserves the right to withhold access to services until full payment is received. Any applicable taxes, duties, or import fees are the responsibility of the client institution.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">7.</span>Warranty & Support</h6>
-    <p>
-      Support is provided as per agreement. Misuse or unauthorized changes are not covered.
-    </p>
+  <!-- 6. Onboarding & Delivery -->
+  <div class="terms-section">
+    <h2>6. Onboarding &amp; Delivery</h2>
+    <p>Implementation and onboarding timelines are estimates. Criativo is not liable for delays caused by third-party integrations, client-side infrastructure, or force majeure events. Risk and responsibility for data provided during onboarding passes to the client upon confirmation of data receipt by Criativo.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">8.</span>Limitation of Liability</h6>
-    <p>
-      Criativo is not liable for indirect damages. Liability is limited to fees paid.
-    </p>
+  <!-- 7. Warranty & Support -->
+  <div class="terms-section">
+    <h2>7. Warranty &amp; Support</h2>
+    <p>Criativo products are supported and maintained as specified in the applicable service agreement. Warranty and support do not cover issues caused by misuse, unauthorised modifications, or failure to follow Criativo's implementation guidelines. Any requests for refunds or cancellations must be submitted in writing and are subject to review by Criativo. Unauthorised cancellations will not be accepted.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">9.</span>Intellectual Property</h6>
-    <p>
-      All content is owned by Criativo and cannot be reproduced without permission.
-    </p>
+  <!-- 8. Limitation of Liability -->
+  <div class="terms-section">
+    <h2>8. Limitation of Liability</h2>
+    <p>Criativo shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use our products or services, including but not limited to data loss, academic disruption, or operational interruption. Our total liability shall not exceed the fees paid for the specific product or service in question.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">10.</span>Institutional & Partner Relationships</h6>
-    <p>
-      Partners operate independently. Criativo is not responsible for partner commitments.
-    </p>
+  <!-- 9. Intellectual Property -->
+  <div class="terms-section">
+    <h2>9. Intellectual Property</h2>
+    <p>All content on criativo.ai, including logos, product names, descriptions, and imagery, is the property of Criativo and may not be reproduced or distributed without prior written consent.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">11.</span>Governing Law</h6>
-    <p>
-      Governed by UAE laws. Jurisdiction: Dubai courts.
-    </p>
+  <!-- 10. Institutional & Partner Relationships -->
+  <div class="terms-section">
+    <h2>10. Institutional &amp; Partner Relationships</h2>
+    <p>Authorised partners and resellers operate independently. Criativo is not responsible for representations, warranties, or commitments made by partners beyond what is expressly stated in official Criativo documentation.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">12.</span>Changes to Terms</h6>
-    <p>
-      Terms may be updated anytime. Continued use implies acceptance.
-    </p>
+  <!-- 11. Governing Law -->
+  <div class="terms-section">
+    <h2>11. Governing Law</h2>
+    <p>These Terms and Conditions are governed by the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the courts of Dubai, UAE.</p>
   </div>
 
-  <div class="card-custom">
-    <h6 class=""><span class="section-number">13.</span>Contact</h6>
+  <!-- 12. Changes to Terms -->
+  <div class="terms-section">
+    <h2>12. Changes to Terms</h2>
+    <p>Criativo reserves the right to update these Terms and Conditions at any time. Continued use of our website or services following any update constitutes your acceptance of the revised terms. We encourage users to review this page periodically.</p>
+  </div>
+
+  <!-- 13. Contact & Data Enquiries -->
+  <div class="terms-section">
+    <h2>13. Contact &amp; Data Enquiries</h2>
+    <p>For questions regarding these Terms, your privacy, or how your data is handled, please contact us:</p>
+    
+    
+  </div>
+<div class="card-custom">
+   
     <p>
       📧 info@criativo.ai<br>
       📞 +91 9989276663<br>
       💬 WhatsApp: wa.me/+91 9989276663
     </p>
   </div>
+  
+</div>   
 
-</div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
             <script>
               const PDF_ITEMS = [
                 {
