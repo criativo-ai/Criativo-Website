@@ -3029,6 +3029,7 @@ font-size: 20px;
 }
 .hdng2 {
     font-size: 26px;
+<<<<<<< HEAD
 }
 
 
@@ -3096,4 +3097,6 @@ ul i {
 .tabs-wrapper::after {
   right: 0;
   background: linear-gradient(to left, #fff, transparent);
+=======
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
 }

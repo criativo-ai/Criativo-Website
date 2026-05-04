@@ -57,8 +57,13 @@
     .cr-tag {
       display: inline-block;
       padding: 6px 16px;
+<<<<<<< HEAD
       background: #f5faf9;
       color: #318d88;
+=======
+      background: rgba(79, 70, 229, 0.1);
+      color: var(--primary);
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       border-radius: 100px;
       font-weight: 600;
       font-size: 0.85rem;
@@ -66,15 +71,25 @@
     }
 
     .cr-title {
+<<<<<<< HEAD
       font-size: 3rem;
       font-weight: 700;
+=======
+      font-size: 3.5rem;
+      font-weight: 800;
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
 
     .cr-subtext {
       font-size: 1.15rem;
+<<<<<<< HEAD
       /* max-width: 650px; */
+=======
+      color: var(--text-muted);
+      max-width: 650px;
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
     }
 
     /* Buttons */
@@ -122,14 +137,23 @@
     .cr-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+<<<<<<< HEAD
       border-color: #3c938e;
+=======
+      border-color: var(--primary);
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
     }
 
     .cr-icon-box {
       width: 48px;
       height: 48px;
+<<<<<<< HEAD
       background: #f5faf9;
       color: #3c938e;
+=======
+      background: #f0f4ff;
+      color: var(--primary);
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -154,12 +178,20 @@
       font-family: "Plus Jakarta Sans";
       font-size: 2.5rem;
       font-weight: 800;
+<<<<<<< HEAD
       color: white;
+=======
+      color: var(--accent);
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       margin-bottom: 5px;
     }
 
     .cr-stat-label {
+<<<<<<< HEAD
       color: white;
+=======
+      color: #94a3b8;
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       font-size: 0.9rem;
       font-weight: 500;
     }
@@ -173,7 +205,11 @@
 
     .gap-icon {
       flex-shrink: 0;
+<<<<<<< HEAD
       color: #3c938e;
+=======
+      color: #ef4444;
+>>>>>>> a48c658a115e774c135b82ce45046f38d1d0c84c
       font-size: 1.25rem;
     }
 
