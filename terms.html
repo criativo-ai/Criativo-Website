@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    /* header / hero section */
+    .legal-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e8e8ec;
+      padding-bottom: 2rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .logo-marker {
+      width: 32px;
+      height: 32px;
+      background: #1e2f3c;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .brand h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1e2f3c;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: #5b6e8c;
+      margin-top: 0.3rem;
+      font-weight: 400;
+    }
+
+    .last-updated {
+      font-size: 0.8rem;
+      color: #8a99b0;
+      margin-top: 1rem;
+      border-left: 2px solid #dcdce4;
+      padding-left: 0.75rem;
+    }
+
+    /* each terms block */
+    .terms-section {
+      margin-bottom: 2.8rem;
+      scroll-margin-top: 1rem;
+    }
+
+    .terms-section h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #1e2f3c;
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1.5px solid #ececf0;
+      display: inline-block;
+    }
+
+    .terms-section h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.2rem 0 0.5rem 0;
+      color: #2c3e4e;
+    }
+
+    .terms-section p, .terms-section li {
+      font-size: 0.95rem;
+      color: #2d3a48;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .terms-section ul, .terms-section .list-styled {
+      margin: 0.75rem 0 1rem 1.5rem;
+    }
+
+    .terms-section li {
+      margin-bottom: 0.4rem;
+    }
+
+    .terms-section a {
+      color: #2b6e6f;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5e1;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .terms-section a:hover {
+      color: #1a4e4f;
+      border-bottom-color: #1a4e4f;
+    }
+
+    .highlight-badge {
+      background: #f0f2f5;
+      padding: 0.15rem 0.4rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #2c5f6b;
+      display: inline-block;
+    }
+
+    .sub-section {
+      margin-left: 0.5rem;
+      padding-left: 0.75rem;
+      border-left: 2px solid #eef2f5;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 1px;
+      background: #e8e8ec;
+    }
+
+    .footer-note {
+      margin-top: 3.5rem;
+      padding-top: 1.8rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #7f8c9a;
+      border-top: 1px solid #e8e8ec;
+    }
+
+    .contact-block {
+      background: #f5f7fb;
+      padding: 1.2rem 1.5rem;
+      border-radius: 24px;
+      margin: 2rem 0 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contact-email {
+      font-weight: 600;
+      font-family: monospace;
+      background: #fff;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #e2e8f0;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.8rem 1.2rem 3rem;
+      }
+      .terms-section h2 {
+        font-size: 1.25rem;
+      }
+      .contact-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+
+    /* subtle transition */
+    .terms-section p, .terms-section li {
+      transition: color 0.1s;
+    }
+  </style>
+  
+  <meta charset="utf-8">
+  <meta property="og:title" content="Criativo Global">
+  <meta property="og:description"
+    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
+  <meta property="og:image" content="https://criativo.ai/assets/img/thumbnail.jpg">
+  <meta property="og:url" content="https://criativo.ai">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="analysis, abhyas, digival">
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card"
+    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
+  <meta name="twitter:title" content="Criativo Global">
+  <meta name="twitter:description"
+    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
+  <meta name="twitter:image" content="https://criativo.ai/assets/img/thumbnail.jpg">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CRIATIVO</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="assets/css/pdf-fliper.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "qo4m1kfx9q");
+  </script>
+
+</head>
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"> <img src="assets/img/logo.png"
+          alt=""> </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html#about">About us</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#features">Products</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="news.html">Newsletters</a></li>
+          <li><a href="https://news.criativo.ai" target="_blank">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+
+    </div>
+  </header>
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <div class="wrap">
+              
+
+
+              
+              <!-- Header -->
+<div class="container">
+  <div class="legal-header">
+    
+<h3>TERMS AND CONDITIONS & PRIVACY POLICY</h3>
+<small class="d-block">Criativo | <a href="https://criativo.ai">criativo.ai</a></small>
+<small class="d-block"><span class="fw-semibold">Last updated:</span> April 2026
+  </div>
+
+  <!-- 1. Acceptance of Terms -->
+  <div class="terms-section" id="acceptance">
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using the Criativo website (<a href="https://criativo.ai" target="_blank">criativo.ai</a>) or using any of our products or services, you agree to be bound by these Terms and Conditions and Privacy Policy. If you do not agree, please discontinue use of our website and services.</p>
+  </div>
+
+  <!-- 2. About Us -->
+  <div class="terms-section">
+    <h2>2. About Us</h2>
+    <p>Criativo is a Dubai, UAE-based company specialising in AI-powered educational technology solutions, including a Learning Enhancement System (Abhyas), an Institutional Intelligence Platform (AnalySIS), and a Digital Valuation and Exam Grading tool (DigiVal). Our registered office is located at Dubai International Financial Center, Dubai, UAE.</p>
+  </div>
+
+  <!-- 3. Privacy & Data Security (merged elegantly) -->
+  <div class="terms-section">
+    <h2>3. Privacy &amp; Data Security</h2>
+    <p>Criativo is committed to protecting your personal data and respecting your privacy in accordance with applicable data protection laws, including the <strong>UAE Federal Decree-Law No. 45 of 2021</strong> on Personal Data Protection.</p>
+
+    <h3>📘 What data we collect</h3>
+    <p>We may collect personal information including your name, institution name, email address, phone number, and general location when you contact us, submit an enquiry, or request a product demo.</p>
+
+    <h3>🔍 How we use your data</h3>
+    <p>Your data is used solely to respond to your enquiries, process demo requests, provide product support, and communicate relevant product updates. We do not sell, rent, or trade your personal information to third parties.</p>
+
+    <h3>🛡️ How we protect your data</h3>
+    <p>Criativo implements appropriate technical and organisational security measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Access to personal data is restricted to authorised personnel only.</p>
+
+    <h3>⏳ Data retention</h3>
+    <p>We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, or as required by applicable law.</p>
+
+    <h3>🔗 Third-party services</h3>
+    <p>Our website may contain links to third-party platforms (e.g. LinkedIn, WhatsApp, Instagram). Criativo is not responsible for the privacy practices of those platforms and encourages users to review their respective privacy policies.</p>
+
+    <h3>⚖️ Your rights</h3>
+    <p>You have the right to request access to, correction of, or deletion of your personal data held by Criativo. To exercise these rights, contact us at <a href="mailto:info@criativo.ai">info@criativo.ai</a>.</p>
+  </div>
+
+  <!-- 4. Products & Services -->
+  <div class="terms-section">
+    <h2>4. Products &amp; Services</h2>
+    <p>All products and services are subject to availability. Criativo reserves the right to modify, limit, or discontinue any product or service at any time. Product specifications and feature descriptions are provided in good faith. Institutions are responsible for ensuring that Criativo's solutions meet their specific operational or regulatory requirements before onboarding. Engagements are confirmed only upon receipt of written confirmation from Criativo.</p>
+  </div>
+
+  <!-- 5. Pricing & Payment -->
+  <div class="terms-section">
+    <h2>5. Pricing &amp; Payment</h2>
+    <p>All prices are quoted in the applicable currency and are subject to change without notice. Payment terms will be agreed upon at the time of engagement. Criativo reserves the right to withhold access to services until full payment is received. Any applicable taxes, duties, or import fees are the responsibility of the client institution.</p>
+  </div>
+
+  <!-- 6. Onboarding & Delivery -->
+  <div class="terms-section">
+    <h2>6. Onboarding &amp; Delivery</h2>
+    <p>Implementation and onboarding timelines are estimates. Criativo is not liable for delays caused by third-party integrations, client-side infrastructure, or force majeure events. Risk and responsibility for data provided during onboarding passes to the client upon confirmation of data receipt by Criativo.</p>
+  </div>
+
+  <!-- 7. Warranty & Support -->
+  <div class="terms-section">
+    <h2>7. Warranty &amp; Support</h2>
+    <p>Criativo products are supported and maintained as specified in the applicable service agreement. Warranty and support do not cover issues caused by misuse, unauthorised modifications, or failure to follow Criativo's implementation guidelines. Any requests for refunds or cancellations must be submitted in writing and are subject to review by Criativo. Unauthorised cancellations will not be accepted.</p>
+  </div>
+
+  <!-- 8. Limitation of Liability -->
+  <div class="terms-section">
+    <h2>8. Limitation of Liability</h2>
+    <p>Criativo shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use our products or services, including but not limited to data loss, academic disruption, or operational interruption. Our total liability shall not exceed the fees paid for the specific product or service in question.</p>
+  </div>
+
+  <!-- 9. Intellectual Property -->
+  <div class="terms-section">
+    <h2>9. Intellectual Property</h2>
+    <p>All content on criativo.ai, including logos, product names, descriptions, and imagery, is the property of Criativo and may not be reproduced or distributed without prior written consent.</p>
+  </div>
+
+  <!-- 10. Institutional & Partner Relationships -->
+  <div class="terms-section">
+    <h2>10. Institutional &amp; Partner Relationships</h2>
+    <p>Authorised partners and resellers operate independently. Criativo is not responsible for representations, warranties, or commitments made by partners beyond what is expressly stated in official Criativo documentation.</p>
+  </div>
+
+  <!-- 11. Governing Law -->
+  <div class="terms-section">
+    <h2>11. Governing Law</h2>
+    <p>These Terms and Conditions are governed by the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the courts of Dubai, UAE.</p>
+  </div>
+
+  <!-- 12. Changes to Terms -->
+  <div class="terms-section">
+    <h2>12. Changes to Terms</h2>
+    <p>Criativo reserves the right to update these Terms and Conditions at any time. Continued use of our website or services following any update constitutes your acceptance of the revised terms. We encourage users to review this page periodically.</p>
+  </div>
+
+  <!-- 13. Contact & Data Enquiries -->
+  <div class="terms-section">
+    <h2>13. Contact &amp; Data Enquiries</h2>
+    <p>For questions regarding these Terms, your privacy, or how your data is handled, please contact us:</p>
+    
+    
+  </div>
+<div class="card-custom">
+   
+    <p>
+      📧 info@criativo.ai<br>
+      📞 +91 9989276663<br>
+      💬 WhatsApp: wa.me/+91 9989276663
+    </p>
+  </div>
+  
+</div>   
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+            <script>
+              const PDF_ITEMS = [
+                {
+                heading: 'APR -2026', 
+                title: 'Why the Report Card Is No Longer Enough',
+                  url: 'pdfs/April-Newsletter.pdf'
+                },
+                {
+                heading: 'MAR -2026', 
+                title: 'Inclusion in Action: Support That Works in Real Classrooms',
+                  url: 'pdfs/March_Newsletter.pdf'
+                },
+
+                 {
+                heading: 'FEB-2026', 
+                title: 'Assessment Is Changing in the UAE',
+                  url: 'pdfs/February Newsletter.pdf'
+                },
+			  
+
+                 {
+                heading: 'JAN-2026', 
+                title: 'EdTech That Sticks: What Schools Will Actually Adopt in 2026',
+                  url: 'pdfs/January Newsletter.pdf'
+                },
+			  
+			  
+			          {
+                heading: 'DEC-2025', 
+                title: 'Education with Purpose: Building Trust with Parents & Students',
+                  url: 'pdfs/December Newsletter.pdf'
+                },
+				
+				
+				  {
+                heading: 'NOV-2025', 
+                title: 'The tuition gap',
+                  url: 'pdfs/November Newsletter.pdf'
+                },
+
+              {
+                heading: 'OCT-2025', 
+                title: 'Criativo Global Newsletter Beyond the Hype: Real Applications of AI in Education',
+                  url: 'pdfs/Criativo_Newsletter_003.pdf'
+                },
+
+                {
+                  heading: 'SEP-2025',
+                  title: 'Criativo Global Newsletter From Chalkboards To Ecosystems',
+                  url: 'pdfs/Criativo-Newsletter-09_25_002.pdf'
+                },
+
+                {
+                  heading: 'AUG-2025',
+                  title: 'Criativo Global Back To School Newsletter',
+                  url: 'pdfs/newsletter1.pdf'
+                },
+              ];
+
+              // Set up PDF.js worker
+              pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+              const gallery = document.getElementById('gallery');
+              const statusEl = document.getElementById('status');
+
+              async function createPlaceholderCanvas(title, isError = false) {
+                const canvas = document.createElement('canvas');
+                canvas.width = 300;
+                canvas.height = 400;
+                const ctx = canvas.getContext('2d');
+
+                if (isError) {
+                  ctx.fillStyle = '#2a1f1f';
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+                  ctx.fillStyle = '#ff6b6b';
+                  ctx.font = '16px Inter, sans-serif';
+                  ctx.textAlign = 'center';
+                  ctx.fillText('Failed to load', canvas.width / 2, canvas.height / 2 - 20);
+                  ctx.fillText('PDF', canvas.width / 2, canvas.height / 2 + 10);
+                } else {
+                  // Create a nice gradient background
+                  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                  gradient.addColorStop(0, '#1a2332');
+                  gradient.addColorStop(1, '#0f1724');
+                  ctx.fillStyle = gradient;
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                  // Add document icon
+                  ctx.fillStyle = '#08a0f7';
+                  ctx.fillRect(canvas.width / 2 - 40, canvas.height / 2 - 60, 80, 100);
+                  ctx.fillStyle = '#ffffff';
+                  ctx.fillRect(canvas.width / 2 - 35, canvas.height / 2 - 55, 70, 90);
+
+                  // Add text
+                  ctx.fillStyle = '#97a0b3';
+                  ctx.font = '14px Inter, sans-serif';
+                  ctx.textAlign = 'center';
+                  ctx.fillText('PDF Document', canvas.width / 2, canvas.height / 2 + 60);
+                }
+
+                return canvas;
+              }
+
+              async function makeCard(item, index) {
+                const card = document.createElement('div');
+                card.className = 'card';
+                // 📅 Add heading (like AUG-25)
+                if (item.heading) {
+                const heading = document.createElement('div');
+                heading.className = 'heading';
+                heading.textContent = item.heading;
+                card.appendChild(heading);
+                }
+                const thumb = document.createElement('div');
+                thumb.className = 'thumb';
+
+                // Show loading state initially
+                const loadingDiv = document.createElement('div');
+                loadingDiv.className = 'loading-placeholder';
+                loadingDiv.innerHTML = '<div class="loading-text">Loading...</div>';
+                thumb.appendChild(loadingDiv);
+
+                const meta = document.createElement('div');
+                meta.className = 'meta';
+                const h3 = document.createElement('h3');
+                h3.textContent = item.title;
+                const small = document.createElement('small');
+                small.textContent = item.url;
+                
+                meta.appendChild(h3);
+                
+                meta.appendChild(small);
+
+                card.appendChild(thumb);
+                card.appendChild(meta);
+
+                // Try to load PDF thumbnail
+                try {
+                  console.log(`Loading PDF: ${item.title} from ${item.url}`);
+
+                  const loadingTask = pdfjsLib.getDocument({
+                    url: item.url,
+                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
+                    cMapPacked: true,
+                    httpHeaders: {
+                      'Accept': 'application/pdf'
+                    }
+                  });
+
+                  const pdf = await loadingTask.promise;
+                  const page = await pdf.getPage(1);
+
+                  const viewport = page.getViewport({ scale: 1 });
+                  const scale = Math.min(300 / viewport.width, 400 / viewport.height);
+                  const scaledViewport = page.getViewport({ scale });
+
+                  const canvas = document.createElement('canvas');
+                  canvas.width = scaledViewport.width;
+                  canvas.height = scaledViewport.height;
+
+                  const context = canvas.getContext('2d');
+                  const renderContext = {
+                    canvasContext: context,
+                    viewport: scaledViewport
+                  };
+
+                  await page.render(renderContext).promise;
+
+                  // Replace loading with actual thumbnail
+                  thumb.removeChild(loadingDiv);
+                  thumb.appendChild(canvas);
+
+                  console.log(`Successfully loaded thumbnail for: ${item.title}`);
+
+                } catch (error) {
+                  console.error(`Failed to load PDF ${item.title}:`, error);
+
+                  // Replace loading with error placeholder
+                  thumb.removeChild(loadingDiv);
+                  const errorCanvas = await createPlaceholderCanvas(item.title, true);
+                  thumb.appendChild(errorCanvas);
+                }
+
+                card.addEventListener('click', () => openViewer(index));
+                return card;
+              }
+
+              // Initialize gallery
+              async function initializeGallery() {
+                statusEl.textContent = 'Loading PDFs...';
+
+                let successCount = 0;
+                for (let i = 0; i < PDF_ITEMS.length; i++) {
+                  try {
+                    const card = await makeCard(PDF_ITEMS[i], i);
+                    gallery.appendChild(card);
+                    successCount++;
+                  } catch (error) {
+                    console.error(`Failed to create card for ${PDF_ITEMS[i].title}:`, error);
+                  }
+                }
+
+                if (successCount > 0) {
+                  statusEl.textContent = `Loaded ${successCount} PDF${successCount !== 1 ? 's' : ''}`;
+                } else {
+                  statusEl.textContent = 'No PDFs could be loaded. Check console for errors.';
+                }
+
+                // Hide status after a delay
+                setTimeout(() => {
+                  statusEl.style.opacity = '0';
+                }, 3000);
+              }
+
+              // Viewer functionality
+              let currentPDF = null;
+              let currentDoc = null;
+              let currentPage = 1;
+              let pageCount = 0;
+              let isAnimating = false;
+
+              const flipStage = document.getElementById('flipStage');
+              const viewer = document.getElementById('viewer');
+              const vtitle = document.getElementById('vtitle');
+              const pageNumEl = document.getElementById('pageNum');
+              const pageCountEl = document.getElementById('pageCount');
+              const closeBtn = document.getElementById('closeBtn');
+              const prevBtn = document.getElementById('prevBtn');
+              const nextBtn = document.getElementById('nextBtn');
+              const downloadBtn = document.getElementById('downloadBtn');
+
+              function openViewer(index) {
+                if (index >= PDF_ITEMS.length) return;
+
+                currentPDF = PDF_ITEMS[index];
+                vtitle.textContent = currentPDF.title;
+                downloadBtn.onclick = () => window.open(currentPDF.url, '_blank');
+
+                viewer.classList.add('show');
+                viewer.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+
+                loadDocument(currentPDF.url);
+              }
+
+              function closeViewer() {
+                viewer.classList.remove('show');
+                viewer.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                cleanup();
+              }
+
+              closeBtn.addEventListener('click', closeViewer);
+              prevBtn.addEventListener('click', () => goToPage(currentPage - 1));
+              nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
+
+              async function loadDocument(url) {
+                cleanup();
+                vtitle.textContent = 'Loading PDF...';
+
+                try {
+                  const loadingTask = pdfjsLib.getDocument({
+                    url: url,
+                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
+                    cMapPacked: true
+                  });
+
+                  currentDoc = await loadingTask.promise;
+                  pageCount = currentDoc.numPages;
+                  pageCountEl.textContent = pageCount;
+                  currentPage = 1;
+
+                  vtitle.textContent = currentPDF.title;
+                  await renderAndDisplayPage(currentPage, false);
+
+                } catch (error) {
+                  console.error('Failed to load document:', error);
+                  vtitle.textContent = 'Failed to load PDF';
+                  flipStage.innerHTML = '<div style="color: #ff6b6b; text-align: center; padding: 40px;">Error loading PDF</div>';
+                }
+              }
+
+              function cleanup() {
+                flipStage.innerHTML = '';
+                currentDoc = null;
+                currentPage = 1;
+                pageCount = 0;
+                pageNumEl.textContent = '0';
+                pageCountEl.textContent = '0';
+                isAnimating = false;
+              }
+
+              async function renderPageToCanvas(pageNumber) {
+                if (!currentDoc) return null;
+
+                try {
+                  const page = await currentDoc.getPage(pageNumber);
+
+                  // Calculate scale to fit device height while maintaining aspect ratio
+                  const viewport = page.getViewport({ scale: 1 });
+                  const availableHeight = window.innerHeight - 140; // Account for header and footer
+                  const availableWidth = window.innerWidth - 100; // Account for padding and side buttons
+
+                  const scaleByHeight = availableHeight / viewport.height;
+                  const scaleByWidth = availableWidth / viewport.width;
+                  const scale = Math.min(scaleByHeight, scaleByWidth, 3); // Cap at 3x for performance
+
+                  const scaledViewport = page.getViewport({ scale });
+
+                  const canvas = document.createElement('canvas');
+                  canvas.width = scaledViewport.width;
+                  canvas.height = scaledViewport.height;
+
+                  const context = canvas.getContext('2d');
+                  const renderContext = {
+                    canvasContext: context,
+                    viewport: scaledViewport
+                  };
+
+                  await page.render(renderContext).promise;
+                  return canvas;
+
+                } catch (error) {
+                  console.error(`Failed to render page ${pageNumber}:`, error);
+                  return null;
+                }
+              }
+
+              async function renderAndDisplayPage(pageNumber, withFlip = true, isForward = true) {
+                if (isAnimating || !currentDoc) return;
+
+                const newCanvas = await renderPageToCanvas(pageNumber);
+                if (!newCanvas) return;
+
+                if (flipStage.children.length === 0) {
+                  // First page
+                  const page = document.createElement('div');
+                  page.className = 'page';
+                  page.appendChild(newCanvas);
+                  flipStage.appendChild(page);
+
+                } else if (withFlip) {
+                  // Flip animation
+                  isAnimating = true;
+                  const oldPage = flipStage.children[0];
+                  const newPage = document.createElement('div');
+                  newPage.className = 'page';
+                  newPage.appendChild(newCanvas);
+
+                  if (isForward) {
+                    oldPage.classList.add('flip-out');
+                    newPage.classList.add('flip-in');
+                  } else {
+                    oldPage.classList.add('flip-out-reverse');
+                    newPage.classList.add('flip-in-reverse');
+                  }
+
+                  flipStage.appendChild(newPage);
+
+                  setTimeout(() => {
+                    if (oldPage && oldPage.parentNode) {
+                      oldPage.parentNode.removeChild(oldPage);
+                    }
+                    newPage.classList.remove('flip-in', 'flip-in-reverse');
+                    isAnimating = false;
+                  }, 650);
+
+                } else {
+                  // Replace without animation
+                  const oldPage = flipStage.children[0];
+                  oldPage.parentNode.removeChild(oldPage);
+                  const page = document.createElement('div');
+                  page.className = 'page';
+                  page.appendChild(newCanvas);
+                  flipStage.appendChild(page);
+                }
+
+                currentPage = pageNumber;
+                pageNumEl.textContent = currentPage;
+              }
+
+              async function goToPage(pageNumber) {
+                if (isAnimating || !currentDoc || pageNumber < 1 || pageNumber > pageCount) return;
+
+                const isForward = pageNumber > currentPage;
+                await renderAndDisplayPage(pageNumber, true, isForward);
+              }
+
+              // Event listeners
+              document.addEventListener('keydown', (e) => {
+                if (viewer.classList.contains('show')) {
+                  if (e.key === 'ArrowRight' || e.key === 'Space') {
+                    e.preventDefault();
+                    goToPage(currentPage + 1);
+                  }
+                  if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    goToPage(currentPage - 1);
+                  }
+                  if (e.key === 'Escape') {
+                    e.preventDefault();
+                    closeViewer();
+                  }
+                }
+              });
+
+              viewer.addEventListener('click', (e) => {
+                if (e.target === viewer) {
+                  closeViewer();
+                }
+              });
+
+              // Initialize the gallery when the page loads
+              initializeGallery();
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".php-email-form").addEventListener("submit", async function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Select form elements
+          const name = document.querySelector("input[name='name']").value.trim();
+          const email = document.querySelector("input[name='email']").value.trim();
+          const message = document.querySelector("textarea[name='message']").value.trim();
+
+          // Construct the message payload
+          const payload = {
+            text: `New message from *${name}* (\`${email}\`):\n*Message:* \n${message}`
+          };
+
+          const url = "https://chat.googleapis.com/v1/spaces/AAAAsuHfdxs/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=hh4Kf50Psl37ZYFHx7KqLtTOUkhJYPt46w3IxcEyxKA";
+
+          try {
+            document.querySelector(".loading").style.display = "block"; // Show loading
+
+            const response = await fetch(url, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(payload)
+            });
+
+            document.querySelector(".loading").style.display = "none"; // Hide loading
+
+            // Clear form values using IDs
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+            if (response.ok) {
+              document.querySelector(".sent-message").style.display = "block"; // Show success message
+              document.querySelector(".error-message").style.display = "none"; // Hide error message
+              document.querySelector(".php-email-form").reset(); // Reset the form                    
+            } else {
+              throw new Error("Failed to send message.");
+            }
+          } catch (error) {
+            document.querySelector(".error-message").textContent = "Error: " + error.message;
+            document.querySelector(".error-message").style.display = "block"; // Show error message
+          }
+        });
+      });
+
+      async function subscribemailchat() {
+        const input = document.getElementById('subscribeemail');
+        const submail = input.value.trim();
+        const errorEl = document.getElementById('subscribeemailError');
+        const successEl = document.getElementById('subscribeemailSuccess');
+
+        // regex: fairly strict but simple
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        // Clear previous messages
+        errorEl.style.display = "none";
+        errorEl.innerText = "";
+        successEl.style.display = "none";
+        successEl.innerText = "";
+
+        // Basic empty check
+        if (!submail) {
+          errorEl.innerText = "Please enter your email.";
+          errorEl.style.display = "block";
+          input.focus();
+          return;
+        }
+
+        // Regex validation
+        if (!emailPattern.test(submail)) {
+          errorEl.innerText = "Please enter a valid email address.";
+          errorEl.style.display = "block";
+          input.focus();
+          return;
+        }
+
+        // Passed validation — show a loading indicator if you have one
+        const loading = document.querySelector(".loading");
+        if (loading) loading.style.display = "block";
+
+
+const d = new Date();
+
+const payload = {
+  email: submail,
+  datetime: 
+    d.getFullYear() + "-" +
+    ("0" + (d.getMonth() + 1)).slice(-2) + "-" +
+    ("0" + d.getDate()).slice(-2) + " " +
+    ("0" + d.getHours()).slice(-2) + ":" +
+    ("0" + d.getMinutes()).slice(-2) + ":" +
+    ("0" + d.getSeconds()).slice(-2)
+};
+        const url = "https://script.google.com/macros/s/AKfycbwTnCnnCemRWDKDR_WhSIs1dzN_Ud7j6NaKUbmgaM1ylG4TwhB9V7TpAHVakiVHvzp_eQ/exec"; // your webhook
+
+        try {
+          const response = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(payload)
+          });
+
+          if (response.ok) {
+            successEl.innerText = "✅ Your email has been successfully subscribed to Criativo.ai.";
+            successEl.style.display = "block";
+            input.value = "";
+          } else {
+            const errorText = await response.text();
+            errorEl.innerText = "Failed to send subscription. " + errorText;
+            errorEl.style.display = "block";
+          }
+        } catch (error) {
+          errorEl.innerText = "Error: " + error.message;
+          errorEl.style.display = "block";
+        } finally {
+          if (loading) loading.style.display = "none";
+        }
+      }
+
+
+
+    </script>
+
+    <!--    read more-->
+
+    <script>
+      document.querySelectorAll(".readMoreBtn").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Get the target hidden content ID from the data-target attribute
+          const targetId = this.getAttribute("data-target");
+          const hiddenContent = document.getElementById(targetId);
+
+          if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+            hiddenContent.style.display = "block";
+            this.innerText = "Read Less";
+          } else {
+            hiddenContent.style.display = "none";
+            this.innerText = "Read More";
+          }
+
+
+
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--social media links-
+    <div class="position-absolute top-50  translate-middle wrapper_main">
+    <div class="wrapper d-flex flex-column">
+    <a href="https://www.linkedin.com/company/criativo-ai/" class="icon github smeddia" target="_blank"   >
+    <div class="tooltip">LinkedIn</div>
+    <span><i class="fab fa-linkedin"></i></span>
+  </a>
+  <a href="https://www.instagram.com/criativoglobal?igsh=MXZtNDQ0bTlzaHZ5cg==" target="_blank"  class="icon instagram smeddia">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </a>
+  
+</div>
+    </div>
+ end -->
+</body>
+
+</html>

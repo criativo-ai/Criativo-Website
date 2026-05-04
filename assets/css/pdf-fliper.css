@@ -198,13 +198,13 @@ p.lead {
 }
 
 button.btn {
-	background: transparent;
+	/* background: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.06);
-	color: #eaf6ff;
+	color: #eaf6ff; */
 	padding: 8px 12px;
 	border-radius: 8px;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 14px;
 	white-space: nowrap;
 }
 
