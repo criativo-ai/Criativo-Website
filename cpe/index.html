@@ -51,8 +51,8 @@
   <!-- sparkles -->
   <svg width="50" height="50" viewBox="0 0 24 24" style="position: absolute; top: 74px; right: 140px; animation: twinkle 3.6s ease-in-out infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
   <svg width="28" height="28" viewBox="0 0 24 24" style="position: absolute; top: 150px; right: 210px; animation: twinkle 3.6s ease-in-out 1.2s infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
-  <svg width="40" height="40" viewBox="0 0 24 24" style="position: absolute; bottom: 180px; left: 118px; animation: twinkle 4.2s ease-in-out 0.6s infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
-  <svg width="22" height="22" viewBox="0 0 24 24" style="position: absolute; bottom: 262px; left: 182px; animation: twinkle 4.2s ease-in-out 1.8s infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
+  <svg width="40" height="40" viewBox="0 0 24 24" style="position: absolute; bottom: 78px; left: 64px; animation: twinkle 4.2s ease-in-out 0.6s infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
+  <svg width="22" height="22" viewBox="0 0 24 24" style="position: absolute; bottom: 150px; left: 96px; animation: twinkle 4.2s ease-in-out 1.8s infinite;"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#8798CC"></path></svg>
 
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
   <!-- header -->
@@ -67,7 +67,7 @@
   </div>
 
   <!-- quadrant stage -->
-  <div style="position: absolute; top: 196px; left: 0; right: 0; height: 812px;">
+  <div style="position: absolute; top: 178px; left: 0; right: 0; height: 640px;">
 
     <!-- axis lines -->
     <div style="position: absolute; left: 50%; top: calc(50% - 320px); height: 640px; width: 1px; background: linear-gradient(180deg, transparent, rgba(148,163,204,0.3) 15%, rgba(148,163,204,0.3) 85%, transparent); transform-origin: top; animation: drawLineV 1.4s ease-out 0.3s both;"></div>
@@ -113,7 +113,7 @@
     </div>
 
     <!-- pillar 3 : Abhyas Vani (bottom-left) -->
-    <div onClick="{{ openP3 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 28px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; background: linear-gradient(45deg, rgba(200,180,255,0.06), rgba(200,180,255,0.012)); border: 1px solid rgba(200,180,255,0.16); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.3s both;" style-hover="transform: translateY(-6px); border-color: rgba(200,180,255,0.55);">
+    <div onClick="{{ openP3 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 40px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; background: linear-gradient(45deg, rgba(200,180,255,0.06), rgba(200,180,255,0.012)); border: 1px solid rgba(200,180,255,0.16); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.3s both;" style-hover="transform: translateY(-6px); border-color: rgba(200,180,255,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #A78BFA; box-shadow: 0 0 12px rgba(167,139,250,0.8);"></span>
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #E7DEFF; letter-spacing: 4px;">PILLAR 03</span>
@@ -124,7 +124,7 @@
     </div>
 
     <!-- pillar 4 : Shortlist (bottom-right) -->
-    <div onClick="{{ openP4 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 28px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(315deg, rgba(150,225,245,0.07), rgba(150,225,245,0.015)); border: 1px solid rgba(150,225,245,0.18); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.5s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,225,245,0.55);">
+    <div onClick="{{ openP4 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 40px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(315deg, rgba(150,225,245,0.07), rgba(150,225,245,0.015)); border: 1px solid rgba(150,225,245,0.18); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.5s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,225,245,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #C3EEF7; letter-spacing: 4px;">PILLAR 04</span>
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #22D3EE; box-shadow: 0 0 12px rgba(34,211,238,0.8);"></span>
@@ -136,7 +136,8 @@
   </div>
 
   <!-- footer -->
-  <div style="position: absolute; left: 130px; right: 130px; bottom: 40px; display: flex; align-items: center; justify-content: space-between; padding-top: 26px; animation: fadeIn 1s ease-out 1.9s both;">
+  <div style="position: absolute; left: 130px; right: 130px; bottom: 40px; display: flex; flex-direction: column; gap: 22px; padding-top: 96px; animation: fadeIn 1s ease-out 1.9s both;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
     <div style="display: flex; align-items: center; gap: 22px; font-family: 'Space Grotesk', sans-serif; font-size: 27px; font-weight: 600; letter-spacing: 0.5px;">
       <span style="color: #EAF0FA;">Prepare.</span>
       <span style="color: #CDD6EE;">Practice.</span>
@@ -144,6 +145,11 @@
       <span style="color: var(--accent, #4F7CFF); text-shadow: 0 0 24px rgba(79,124,255,0.45);">Get Placed.</span>
     </div>
     <img src="https://criativo.ai/assets/img/logo_green.png" alt="Criativo" style="height: 50px; width: auto; object-fit: contain;">
+    </div>
+    <form onSubmit="{{ submitEmail }}" style="display: flex; align-items: center; gap: 10px; background: rgba(148,163,204,0.06); border: 1px solid rgba(148,163,204,0.28); border-radius: 999px; padding: 6px 6px 6px 24px; align-self: center;">
+      <input type="email" required placeholder="Drop your email for more details" value="{{ email }}" onChange="{{ onEmail }}" style="width: 420px; background: transparent; border: none; outline: none; font-family: 'Manrope', sans-serif; font-size: 19px; color: #EAF0FA;">
+      <button type="submit" style="border: none; cursor: pointer; border-radius: 999px; padding: 13px 30px; background: var(--accent, #4F7CFF); color: #060911; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 700; box-shadow: 0 0 24px rgba(79,124,255,0.35); white-space: nowrap;">{{ emailBtn }}</button>
+    </form>
   </div>
   </sc-if>
 
@@ -310,7 +316,7 @@
   &quot;accent&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#4F7CFF&quot;, &quot;options&quot;: [&quot;#4F7CFF&quot;, &quot;#38BDF8&quot;, &quot;#A78BFA&quot;, &quot;#22D3EE&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Theme&quot;}
 }">
 class Component extends DCLogic {
-  state = { fitScale: 1, view: 'home' };
+  state = { fitScale: 1, view: 'home', email: '', sent: false };
   componentDidMount() {
     this._onResize = () => {
       const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080, 1);
@@ -337,6 +343,10 @@ class Component extends DCLogic {
       openP2: () => this.setState({ view: 'p2' }),
       openP3: () => this.setState({ view: 'p3' }),
       openP4: () => this.setState({ view: 'p4' }),
+      email: this.state.email,
+      emailBtn: this.state.sent ? 'Sent ✓' : 'Submit',
+      onEmail: (e) => this.setState({ email: e.target.value, sent: false }),
+      submitEmail: (e) => { e.preventDefault(); this.setState({ sent: true }); },
     };
   }
 }
