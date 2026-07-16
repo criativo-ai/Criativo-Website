@@ -56,18 +56,20 @@
 
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
   <!-- header -->
-  <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 52px; animation: fadeUp 0.9s ease-out both;">
+  <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 56px;  animation: fadeUp 0.9s ease-out both;">
     <div style="display: flex; align-items: center; gap: 16px;">
       <div style="width: 56px; height: 1px; background: linear-gradient(90deg, transparent, var(--accent, #4F7CFF));"></div>
-      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 600; letter-spacing: 8px; color: var(--accent, #4F7CFF); text-transform: uppercase;">Criativo</span>
+      <img src="https://criativo.ai/assets/img/logo_green.png" alt="Criativo" style="height: 34px; width: auto; object-fit: contain;">
       <div style="width: 56px; height: 1px; background: linear-gradient(90deg, var(--accent, #4F7CFF), transparent);"></div>
     </div>
     <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 68px; font-weight: 700; letter-spacing: -1px; line-height: 1.05; text-align: center; background: linear-gradient(110deg, #EAF0FF 30%, #7CA0FF 50%, #EAF0FF 70%); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: shimmer 6s linear infinite;">Placement Ecosystem</h1>
-    <p style="margin: 0; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 32px; font-weight: 400; color: #AEB9D6; letter-spacing: 0.5px;">All four pillars, one path to placement</p>
+    <p style="margin: 0 0 24px 0; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 32px; font-weight: 400; color: #AEB9D6; letter-spacing: 0.5px;">All four pillars, one path to placement</p>
   </div>
+  
+
 
   <!-- quadrant stage -->
-  <div style="position: absolute; top: 178px; left: 0; right: 0; height: 640px;">
+  <div style="position: absolute; top: 258px; left: 0; right: 0; height: 640px;">
 
     <!-- axis lines -->
     <div style="position: absolute; left: 50%; top: calc(50% - 320px); height: 640px; width: 1px; background: linear-gradient(180deg, transparent, rgba(148,163,204,0.3) 15%, rgba(148,163,204,0.3) 85%, transparent); transform-origin: top; animation: drawLineV 1.4s ease-out 0.3s both;"></div>
@@ -91,7 +93,7 @@
     </div>
 
     <!-- pillar 1 : Abhyas CRT (top-left) -->
-    <div onClick="{{ openP1 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; top: 28px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; background: linear-gradient(135deg, rgba(150,170,255,0.07), rgba(150,170,255,0.015)); border: 1px solid rgba(150,170,255,0.18); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 0.9s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,170,255,0.55);">
+    <div onClick="{{ openP1 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; top: 24px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; background: linear-gradient(135deg, rgba(150,170,255,0.07), rgba(150,170,255,0.015)); border: 1px solid rgba(150,170,255,0.18); border-radius: 24px; padding: 30px 40px; box-sizing: border-box; height: 292px; justify-content: center; animation: fadeUp 0.9s ease-out 0.9s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,170,255,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #6D8BFF; box-shadow: 0 0 12px rgba(109,139,255,0.8);"></span>
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #CBD6FF; letter-spacing: 4px;">PILLAR 01</span>
@@ -102,7 +104,7 @@
     </div>
 
     <!-- pillar 2 : Abhyas Lab (top-right) -->
-    <div onClick="{{ openP2 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; top: 28px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(225deg, rgba(130,210,250,0.07), rgba(130,210,250,0.015)); border: 1px solid rgba(130,210,250,0.18); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.1s both;" style-hover="transform: translateY(-6px); border-color: rgba(130,210,250,0.55);">
+    <div onClick="{{ openP2 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; top: 24px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(225deg, rgba(130,210,250,0.07), rgba(130,210,250,0.015)); border: 1px solid rgba(130,210,250,0.18); border-radius: 24px; padding: 30px 40px; box-sizing: border-box; height: 292px; justify-content: center; animation: fadeUp 0.9s ease-out 1.1s both;" style-hover="transform: translateY(-6px); border-color: rgba(130,210,250,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #CBEBFC; letter-spacing: 4px;">PILLAR 02</span>
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #38BDF8; box-shadow: 0 0 12px rgba(56,189,248,0.8);"></span>
@@ -113,7 +115,7 @@
     </div>
 
     <!-- pillar 3 : Abhyas Vani (bottom-left) -->
-    <div onClick="{{ openP3 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 40px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; background: linear-gradient(45deg, rgba(200,180,255,0.06), rgba(200,180,255,0.012)); border: 1px solid rgba(200,180,255,0.16); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.3s both;" style-hover="transform: translateY(-6px); border-color: rgba(200,180,255,0.55);">
+    <div onClick="{{ openP3 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 24px; left: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; background: linear-gradient(45deg, rgba(200,180,255,0.06), rgba(200,180,255,0.012)); border: 1px solid rgba(200,180,255,0.16); border-radius: 24px; padding: 30px 40px; box-sizing: border-box; height: 292px; justify-content: center; animation: fadeUp 0.9s ease-out 1.3s both;" style-hover="transform: translateY(-6px); border-color: rgba(200,180,255,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #A78BFA; box-shadow: 0 0 12px rgba(167,139,250,0.8);"></span>
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #E7DEFF; letter-spacing: 4px;">PILLAR 03</span>
@@ -124,7 +126,7 @@
     </div>
 
     <!-- pillar 4 : Shortlist (bottom-right) -->
-    <div onClick="{{ openP4 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 40px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(315deg, rgba(150,225,245,0.07), rgba(150,225,245,0.015)); border: 1px solid rgba(150,225,245,0.18); border-radius: 24px; padding: 26px 34px; animation: fadeUp 0.9s ease-out 1.5s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,225,245,0.55);">
+    <div onClick="{{ openP4 }}" style="cursor: pointer; transition: transform 0.25s ease, border-color 0.25s ease; position: absolute; bottom: 24px; right: 150px; width: 460px; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; text-align: right; background: linear-gradient(315deg, rgba(150,225,245,0.07), rgba(150,225,245,0.015)); border: 1px solid rgba(150,225,245,0.18); border-radius: 24px; padding: 30px 40px; box-sizing: border-box; height: 292px; justify-content: center; animation: fadeUp 0.9s ease-out 1.5s both;" style-hover="transform: translateY(-6px); border-color: rgba(150,225,245,0.55);">
       <div style="display: flex; align-items: center; gap: 12px;">
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: #C3EEF7; letter-spacing: 4px;">PILLAR 04</span>
         <span style="width: 10px; height: 10px; border-radius: 50%; background: #22D3EE; box-shadow: 0 0 12px rgba(34,211,238,0.8);"></span>
@@ -136,18 +138,15 @@
   </div>
 
   <!-- footer -->
-  <div style="position: absolute; left: 130px; right: 130px; bottom: 40px; display: flex; flex-direction: column; gap: 22px; padding-top: 96px; animation: fadeIn 1s ease-out 1.9s both;">
-    <div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="position: absolute; left: 130px; right: 130px; bottom: 60px; display: flex; align-items: center; justify-content: space-between; padding-top: 96px; animation: fadeIn 1s ease-out 1.9s both;">
     <div style="display: flex; align-items: center; gap: 22px; font-family: 'Space Grotesk', sans-serif; font-size: 27px; font-weight: 600; letter-spacing: 0.5px;">
       <span style="color: #EAF0FA;">Prepare.</span>
       <span style="color: #CDD6EE;">Practice.</span>
       <span style="color: #B4BFDE;">Perform.</span>
       <span style="color: var(--accent, #4F7CFF); text-shadow: 0 0 24px rgba(79,124,255,0.45);">Get Placed.</span>
     </div>
-    <img src="https://criativo.ai/assets/img/logo_green.png" alt="Criativo" style="height: 50px; width: auto; object-fit: contain;">
-    </div>
-    <form onSubmit="{{ submitEmail }}" style="display: flex; align-items: center; gap: 10px; background: rgba(148,163,204,0.06); border: 1px solid rgba(148,163,204,0.28); border-radius: 999px; padding: 6px 6px 6px 24px; align-self: center;">
-      <input type="email" required placeholder="Drop your email for more details" value="{{ email }}" onChange="{{ onEmail }}" style="width: 420px; background: transparent; border: none; outline: none; font-family: 'Manrope', sans-serif; font-size: 19px; color: #EAF0FA;">
+    <form onSubmit="{{ submitEmail }}" style="display: flex; align-items: center; gap: 10px; background: rgba(148,163,204,0.06); border: 1px solid rgba(148,163,204,0.28); border-radius: 999px; padding: 6px 6px 6px 24px;">
+      <input type="email" required placeholder="Drop your email for more details" value="{{ email }}" onChange="{{ onEmail }}" style="width: 340px; background: transparent; border: none; outline: none; font-family: 'Manrope', sans-serif; font-size: 19px; color: #EAF0FA;">
       <button type="submit" style="border: none; cursor: pointer; border-radius: 999px; padding: 13px 30px; background: var(--accent, #4F7CFF); color: #060911; font-family: 'Space Grotesk', sans-serif; font-size: 19px; font-weight: 700; box-shadow: 0 0 24px rgba(79,124,255,0.35); white-space: nowrap;">{{ emailBtn }}</button>
     </form>
   </div>
