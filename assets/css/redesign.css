@@ -946,3 +946,40 @@ html[data-theme="dark"] .cx .product-card::after { background: linear-gradient(1
 
 /* Harvard credential logos keep a white chip so the logos stay legible */
 html[data-theme="dark"] .cx .tc-creds .cred-logo { background: #fff; }
+
+/* ================= Language switch (Google Translate) ================= */
+.cx .lang-switch {
+  height: 42px; flex: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 0 10px;
+  border-radius: 11px;
+  border: 1.5px solid var(--line-strong);
+  color: var(--navy);
+  cursor: pointer;
+  transition: color .2s ease, border-color .2s ease;
+}
+.cx .lang-switch:hover { color: var(--brand-700); border-color: var(--brand); }
+.cx .lang-switch select {
+  border: 0; background: transparent; color: inherit;
+  font: inherit; font-size: .9rem; font-weight: 600;
+  cursor: pointer; outline: none;
+}
+.cx .lang-switch select option { color: #111; }
+
+/* Hide Google Translate banner, tooltips and highlight */
+.skiptranslate iframe, .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+body { top: 0 !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+
+/* Google Translate loading spinner: show at top-right instead of over the logo */
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  left: auto !important;
+  right: 12px !important;
+  top: 12px !important;
+  transform: scale(.45);
+  transform-origin: top right;
+}
+
+/* Keep the logo at full size when the header gets crowded (e.g. longer translated labels) */
+.cx .brand-logo { flex: none; }
+.cx .brand-logo img { max-width: none; }
