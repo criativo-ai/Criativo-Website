@@ -983,3 +983,13 @@ body { top: 0 !important; }
 /* Keep the logo at full size when the header gets crowded (e.g. longer translated labels) */
 .cx .brand-logo { flex: none; }
 .cx .brand-logo img { max-width: none; }
+
+/* Compact header on phones so logo + language + theme + menu all fit */
+@media (max-width: 560px) {
+  .cx .nav-wrap { gap: 10px; justify-content: space-between; }
+  .cx .nav-cta { gap: 8px; }
+  .cx .brand-logo img { height: 26px; }
+  .cx .lang-switch { height: 38px; padding: 0 6px; }
+  .cx .lang-switch > i { display: none; }
+  .cx .theme-toggle { width: 38px; height: 38px; }
+}

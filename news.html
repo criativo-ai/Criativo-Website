@@ -2,16 +2,36 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) Given by ammer-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18345798076"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
 
-  gtag('config', 'AW-18345798076');
-</script>
- <!-- Google tag (gtag.js) old-->
+  <script>
+    // Set theme before paint to avoid flash (same logic as homepage).
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var theme = 'light';
+      try {
+        var saved = localStorage.getItem('cx-theme');
+        if (saved === 'dark' || saved === 'light') {
+          theme = saved;
+        } else {
+          var h = new Date().getHours();
+          theme = (h < 7 || h >= 19) ? 'dark' : 'light';
+        }
+      } catch (e) {}
+      d.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Google tag (gtag.js) Given by ammer-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18345798076"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-18345798076');
+  </script>
+  <!-- Google tag (gtag.js) old-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17523919773"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,27 +40,23 @@
     gtag('config', 'AW-17523919773');
   </script>
 
-  <meta charset="utf-8">
-  <meta property="og:title" content="Criativo Global">
+  <meta property="og:title" content="Criativo Newsletters">
   <meta property="og:description"
-    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
+    content="Monthly insights on assessment, AI in education and building better institutions — from the Criativo team.">
   <meta property="og:image" content="https://criativo.ai/assets/img/thumbnail.jpg">
-  <meta property="og:url" content="https://criativo.ai">
+  <meta property="og:url" content="https://criativo.ai/news.html">
   <meta property="og:type" content="website">
-  <meta name="keywords" content="analysis, abhyas, digival">
   <meta name="robots" content="index, follow">
-  <meta name="twitter:card"
-    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
-  <meta name="twitter:title" content="Criativo Global">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Criativo Newsletters">
   <meta name="twitter:description"
-    content="Empowering Education Through Innovation – Built by Educators, Designed for the Future.">
+    content="Monthly insights on assessment, AI in education and building better institutions — from the Criativo team.">
   <meta name="twitter:image" content="https://criativo.ai/assets/img/thumbnail.jpg">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>CRIATIVO</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <link href="assets/css/pdf-fliper.css" rel="stylesheet">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  <title>Newsletters — Criativo</title>
+  <meta name="description"
+    content="Read every edition of the Criativo newsletter — monthly insights on assessment, AI in education and building better institutions.">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -49,33 +65,18 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
+  <!-- Redesign stylesheets -->
+  <link href="assets/css/redesign.css" rel="stylesheet">
+  <link href="assets/css/news.css" rel="stylesheet">
+
+  <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -83,731 +84,669 @@
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "qo4m1kfx9q");
   </script>
-
 </head>
 
+<body class="cx">
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<body class="index-page">
-<div class="social-buttons">
-    <a href="https://www.linkedin.com/company/criativo-ai/" target="_blank" class="btn social linkedin">
-      <i class="fab fa-linkedin-in"></i>
-      LinkedIn
-    </a>
-
-    <a href="https://www.instagram.com/criativoglobal?igsh=MXZtNDQ0bTlzaHZ5cg==" target="_blank"
-      class="btn social instagram">
-      <i class="fab fa-instagram"></i>
-      Instagram
-    </a>
-  </div>
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"> <img src="assets/img/logo.png"
-          alt=""> </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html#about">About us</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="index.html#features">Products</a></li>
-          <li><a href="index.html#testimonials">Testimonials</a></li>
-          <li><a href="news.html">Newsletters</a></li>
-          <li><a href="https://blog.criativo.ai/" target="_blank">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
-
+  <!-- ================= Header ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-x nav-wrap">
+      <a href="index.html" class="brand-logo"><img src="assets/img/logo_green.png" alt="Criativo"></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#team">Team</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="news.html" class="active" aria-current="page">Newsletters</a></li>
+        <li><a href="https://blog.criativo.ai/" target="_blank">Blog</a></li>
+      </ul>
+      <div class="nav-cta">
+        <label class="lang-switch notranslate" title="Translate page">
+          <i class="bi bi-translate" aria-hidden="true"></i>
+          <select id="langSelect" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="ar">العربية</option>
+            <option value="fr">FR</option>
+          </select>
+        </label>
+        <div id="google_translate_element" hidden></div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <a href="index.html#contact" class="btn-x btn-primary-x btn-sm-x hide-sm">Request a Demo</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
+      </div>
     </div>
   </header>
-  <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <div class="wrap">
-              <div class="d-md-flex justify-content-between align-items-center">
-                <h1 class="mb-0 pb-0 flex-grow-1 mt-4 mt-md-0">Newsletters</h1>
-                <div class="mt-1">
-                  <form action="https://formspree.io/f/your-form-id" method="POST">
 
-                    <div class="d-md-flex align-items-center gap-0 w-100">
-                      <div id="subscribeRow" class="flex-grow-1">
-                        <input type="email" name="subscribeemail" id="subscribeemail" placeholder="Enter your email"
-                          required class="form-control rounded-end-0 rounded-1  nfrm_xx nletter_xx " />
+  <main>
+    <!-- ================= Hero + subscribe ================= -->
+    <section class="nl-hero" id="top">
+      <div class="container-x">
+        <div class="nl-hero-grid">
+          <div data-reveal>
+            <span class="eyebrow"><i class="bi bi-envelope-paper"></i> The Criativo Newsletter</span>
+            <h1>Insights for <span class="hl">modern educators</span></h1>
+            <p class="sub">
+              Monthly perspectives on assessment, AI in the classroom and building institutions that last —
+              from the team behind Criativo.
+            </p>
+          </div>
 
-                      </div>
-                      <button type="button" style="font-size: inherit!important;"
-                        class="btn py-1 shadow-sm   hstack gap-1  justify-content-center theme_bg mt-3 mt-md-0 w-md-100 rounded-start-0 rounded-1 px-2"
-                        onclick="subscribemailchat()"><span>Subscribe</span></button>
-                    </div>
-                    <div id="subscribeemailError"
-                      style="color:#c00;font-size:0.9rem;display:none;margin-top:6px;opacity:0.8;white-space:prelipre-line;word-break:break-all;">
-                    </div>
-                    <div id="subscribeemailSuccess" style="display:none;">
-                      <p class="mt-3">
-                        <i
-                          class="bi bi-check2 bg-white fs-6 rounded-circle text-success d-inline-flex align-items-center justify-content-center p-1 me-1"></i>
-                      </p>
-                    </div>
-                  </form>
-                </div>
+          <div class="nl-sub-card" data-reveal>
+            <h3><i class="bi bi-bell"></i> Get every edition in your inbox</h3>
+            <p>One email a month. No spam — unsubscribe anytime.</p>
+            <form id="subscribeForm" novalidate>
+              <div class="nl-sub-row">
+                <input type="email" name="subscribeemail" id="subscribeemail" class="ctrl"
+                  placeholder="Enter your email" autocomplete="email" required aria-label="Email address">
+                <button type="submit" class="btn-x btn-primary-x" id="subscribeBtn">Subscribe <i class="bi bi-arrow-right arr"></i></button>
               </div>
-
-
-              <hr />
-              <!-- <p class="lead">Click a card to open the PDF in the flip viewer. This demo uses PDF.js to render pages and a simple 3D flip animation between pages.</p> -->
-              <div class="status" id="status">Loading gallery...</div>
-              <div id="gallery" class="gallery" aria-live="polite"></div>
-              <!-- <div class="note">Tip: to run locally, serve this file with a static server (e.g. <code>python -m http.server</code>) so the browser can fetch PDFs.</div> -->
-            </div>
-            <div id="viewer" class="viewer" role="dialog" aria-hidden="true">
-              <div class="vcard">
-                <div class="vhead">
-                  <div class="title" id="vtitle">Loading...</div>
-                  <div class="controls">
-                    <button class="btn" id="downloadBtn">Download PDF</button>
-                    <button class="btn" id="closeBtn">Close ✕</button>
-                  </div>
-                </div>
-                <div class="vbody">
-                  <div class="flip-stage" id="flipStage" aria-live="polite"></div>
-                  <div class="sideButtons">
-                    <button class="prev" id="prevBtn">◀</button>
-                    <button class="next" id="nextBtn">▶</button>
-                  </div>
-                </div>
-                <div style="padding-top:10px;color:var(--muted);font-size:13px;flex-shrink:0;text-align:center">Page
-                  <span id="pageNum">0</span> / <span id="pageCount">0</span></div>
-              </div>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-            <script>
-              const PDF_ITEMS = [ 
-  { 
-    heading: 'September - 2026',  
-    title: 'Teaching in the Age of AI: What Should Never Change', 
-    url: 'pdfs/September Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'August - 2026',  
-    title: 'The Hidden Ingredient of Great Schools', 
-    url: 'pdfs/Aug-Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'July - 2026',  
-    title: 'The Evolution of Global Learning', 
-    url: 'pdfs/July-Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'June - 2026',  
-    title: 'The Smart Summer Plan', 
-    url: 'pdfs/June Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'May - 2026',  
-    title: 'The New Education Blueprint', 
-    url: 'pdfs/May Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'April - 2026',  
-    title: 'Why the Report Card Is No Longer Enough', 
-    url: 'pdfs/April-Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'March - 2026',  
-    title: 'Inclusion in Action: Support That Works in Real Classrooms', 
-    url: 'pdfs/March_Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'February - 2026',  
-    title: 'Assessment Is Changing in the UAE', 
-    url: 'pdfs/February Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'January - 2026',  
-    title: 'EdTech That Sticks: What Schools Will Actually Adopt in 2026', 
-    url: 'pdfs/January Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'December - 2025',  
-    title: 'Education with Purpose: Building Trust with Parents & Students', 
-    url: 'pdfs/December Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'November - 2025',  
-    title: 'The tuition gap', 
-    url: 'pdfs/November Newsletter.pdf' 
-  }, 
-  { 
-    heading: 'October - 2025',  
-    title: 'Criativo Global Newsletter Beyond the Hype: Real Applications of AI in Education', 
-    url: 'pdfs/Criativo_Newsletter_003.pdf' 
-  }, 
-  { 
-    heading: 'September - 2025', 
-    title: 'Criativo Global Newsletter From Chalkboards To Ecosystems', 
-    url: 'pdfs/Criativo-Newsletter-09_25_002.pdf' 
-  }, 
-  { 
-    heading: 'August - 2025', 
-    title: 'Criativo Global Back To School Newsletter', 
-    url: 'pdfs/newsletter1.pdf' 
-  }, 
-];
-
-              // Set up PDF.js worker
-              pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-
-              const gallery = document.getElementById('gallery');
-              const statusEl = document.getElementById('status');
-
-              async function createPlaceholderCanvas(title, isError = false) {
-                const canvas = document.createElement('canvas');
-                canvas.width = 300;
-                canvas.height = 400;
-                const ctx = canvas.getContext('2d');
-
-                if (isError) {
-                  ctx.fillStyle = '#2a1f1f';
-                  ctx.fillRect(0, 0, canvas.width, canvas.height);
-                  ctx.fillStyle = '#ff6b6b';
-                  ctx.font = '16px Inter, sans-serif';
-                  ctx.textAlign = 'center';
-                  ctx.fillText('Failed to load', canvas.width / 2, canvas.height / 2 - 20);
-                  ctx.fillText('PDF', canvas.width / 2, canvas.height / 2 + 10);
-                } else {
-                  // Create a nice gradient background
-                  const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-                  gradient.addColorStop(0, '#1a2332');
-                  gradient.addColorStop(1, '#0f1724');
-                  ctx.fillStyle = gradient;
-                  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-                  // Add document icon
-                  ctx.fillStyle = '#08a0f7';
-                  ctx.fillRect(canvas.width / 2 - 40, canvas.height / 2 - 60, 80, 100);
-                  ctx.fillStyle = '#ffffff';
-                  ctx.fillRect(canvas.width / 2 - 35, canvas.height / 2 - 55, 70, 90);
-
-                  // Add text
-                  ctx.fillStyle = '#97a0b3';
-                  ctx.font = '14px Inter, sans-serif';
-                  ctx.textAlign = 'center';
-                  ctx.fillText('PDF Document', canvas.width / 2, canvas.height / 2 + 60);
-                }
-
-                return canvas;
-              }
-
-              async function makeCard(item, index) {
-                const card = document.createElement('div');
-                card.className = 'card';
-                // 📅 Add heading (like AUG-25)
-                if (item.heading) {
-                const heading = document.createElement('div');
-                heading.className = 'heading';
-                heading.textContent = item.heading;
-                card.appendChild(heading);
-                }
-                const thumb = document.createElement('div');
-                thumb.className = 'thumb';
-
-                // Show loading state initially
-                const loadingDiv = document.createElement('div');
-                loadingDiv.className = 'loading-placeholder';
-                loadingDiv.innerHTML = '<div class="loading-text">Loading...</div>';
-                thumb.appendChild(loadingDiv);
-
-                const meta = document.createElement('div');
-                meta.className = 'meta';
-                const h3 = document.createElement('h3');
-                h3.textContent = item.title;
-                const small = document.createElement('small');
-                small.textContent = item.url;
-                
-                meta.appendChild(h3);
-                
-                meta.appendChild(small);
-
-                card.appendChild(thumb);
-                card.appendChild(meta);
-
-                // Try to load PDF thumbnail
-                try {
-                  console.log(`Loading PDF: ${item.title} from ${item.url}`);
-
-                  const loadingTask = pdfjsLib.getDocument({
-                    url: item.url,
-                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
-                    cMapPacked: true,
-                    httpHeaders: {
-                      'Accept': 'application/pdf'
-                    }
-                  });
-
-                  const pdf = await loadingTask.promise;
-                  const page = await pdf.getPage(1);
-
-                  const viewport = page.getViewport({ scale: 1 });
-                  const scale = Math.min(300 / viewport.width, 400 / viewport.height);
-                  const scaledViewport = page.getViewport({ scale });
-
-                  const canvas = document.createElement('canvas');
-                  canvas.width = scaledViewport.width;
-                  canvas.height = scaledViewport.height;
-
-                  const context = canvas.getContext('2d');
-                  const renderContext = {
-                    canvasContext: context,
-                    viewport: scaledViewport
-                  };
-
-                  await page.render(renderContext).promise;
-
-                  // Replace loading with actual thumbnail
-                  thumb.removeChild(loadingDiv);
-                  thumb.appendChild(canvas);
-
-                  console.log(`Successfully loaded thumbnail for: ${item.title}`);
-
-                } catch (error) {
-                  console.error(`Failed to load PDF ${item.title}:`, error);
-
-                  // Replace loading with error placeholder
-                  thumb.removeChild(loadingDiv);
-                  const errorCanvas = await createPlaceholderCanvas(item.title, true);
-                  thumb.appendChild(errorCanvas);
-                }
-
-                card.addEventListener('click', () => openViewer(index));
-                return card;
-              }
-
-              // Initialize gallery
-              async function initializeGallery() {
-                statusEl.textContent = 'Loading PDFs...';
-
-                let successCount = 0;
-                for (let i = 0; i < PDF_ITEMS.length; i++) {
-                  try {
-                    const card = await makeCard(PDF_ITEMS[i], i);
-                    gallery.appendChild(card);
-                    successCount++;
-                  } catch (error) {
-                    console.error(`Failed to create card for ${PDF_ITEMS[i].title}:`, error);
-                  }
-                }
-
-                if (successCount > 0) {
-                  statusEl.textContent = `Loaded ${successCount} PDF${successCount !== 1 ? 's' : ''}`;
-                } else {
-                  statusEl.textContent = 'No PDFs could be loaded. Check console for errors.';
-                }
-
-                // Hide status after a delay
-                setTimeout(() => {
-                  statusEl.style.opacity = '0';
-                }, 3000);
-              }
-
-              // Viewer functionality
-              let currentPDF = null;
-              let currentDoc = null;
-              let currentPage = 1;
-              let pageCount = 0;
-              let isAnimating = false;
-
-              const flipStage = document.getElementById('flipStage');
-              const viewer = document.getElementById('viewer');
-              const vtitle = document.getElementById('vtitle');
-              const pageNumEl = document.getElementById('pageNum');
-              const pageCountEl = document.getElementById('pageCount');
-              const closeBtn = document.getElementById('closeBtn');
-              const prevBtn = document.getElementById('prevBtn');
-              const nextBtn = document.getElementById('nextBtn');
-              const downloadBtn = document.getElementById('downloadBtn');
-
-              function openViewer(index) {
-                if (index >= PDF_ITEMS.length) return;
-
-                currentPDF = PDF_ITEMS[index];
-                vtitle.textContent = currentPDF.title;
-                downloadBtn.onclick = () => window.open(currentPDF.url, '_blank');
-
-                viewer.classList.add('show');
-                viewer.setAttribute('aria-hidden', 'false');
-                document.body.style.overflow = 'hidden';
-
-                loadDocument(currentPDF.url);
-              }
-
-              function closeViewer() {
-                viewer.classList.remove('show');
-                viewer.setAttribute('aria-hidden', 'true');
-                document.body.style.overflow = '';
-                cleanup();
-              }
-
-              closeBtn.addEventListener('click', closeViewer);
-              prevBtn.addEventListener('click', () => goToPage(currentPage - 1));
-              nextBtn.addEventListener('click', () => goToPage(currentPage + 1));
-
-              async function loadDocument(url) {
-                cleanup();
-                vtitle.textContent = 'Loading PDF...';
-
-                try {
-                  const loadingTask = pdfjsLib.getDocument({
-                    url: url,
-                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/',
-                    cMapPacked: true
-                  });
-
-                  currentDoc = await loadingTask.promise;
-                  pageCount = currentDoc.numPages;
-                  pageCountEl.textContent = pageCount;
-                  currentPage = 1;
-
-                  vtitle.textContent = currentPDF.title;
-                  await renderAndDisplayPage(currentPage, false);
-
-                } catch (error) {
-                  console.error('Failed to load document:', error);
-                  vtitle.textContent = 'Failed to load PDF';
-                  flipStage.innerHTML = '<div style="color: #ff6b6b; text-align: center; padding: 40px;">Error loading PDF</div>';
-                }
-              }
-
-              function cleanup() {
-                flipStage.innerHTML = '';
-                currentDoc = null;
-                currentPage = 1;
-                pageCount = 0;
-                pageNumEl.textContent = '0';
-                pageCountEl.textContent = '0';
-                isAnimating = false;
-              }
-
-              async function renderPageToCanvas(pageNumber) {
-                if (!currentDoc) return null;
-
-                try {
-                  const page = await currentDoc.getPage(pageNumber);
-
-                  // Calculate scale to fit device height while maintaining aspect ratio
-                  const viewport = page.getViewport({ scale: 1 });
-                  const availableHeight = window.innerHeight - 140; // Account for header and footer
-                  const availableWidth = window.innerWidth - 100; // Account for padding and side buttons
-
-                  const scaleByHeight = availableHeight / viewport.height;
-                  const scaleByWidth = availableWidth / viewport.width;
-                  const scale = Math.min(scaleByHeight, scaleByWidth, 3); // Cap at 3x for performance
-
-                  const scaledViewport = page.getViewport({ scale });
-
-                  const canvas = document.createElement('canvas');
-                  canvas.width = scaledViewport.width;
-                  canvas.height = scaledViewport.height;
-
-                  const context = canvas.getContext('2d');
-                  const renderContext = {
-                    canvasContext: context,
-                    viewport: scaledViewport
-                  };
-
-                  await page.render(renderContext).promise;
-                  return canvas;
-
-                } catch (error) {
-                  console.error(`Failed to render page ${pageNumber}:`, error);
-                  return null;
-                }
-              }
-
-              async function renderAndDisplayPage(pageNumber, withFlip = true, isForward = true) {
-                if (isAnimating || !currentDoc) return;
-
-                const newCanvas = await renderPageToCanvas(pageNumber);
-                if (!newCanvas) return;
-
-                if (flipStage.children.length === 0) {
-                  // First page
-                  const page = document.createElement('div');
-                  page.className = 'page';
-                  page.appendChild(newCanvas);
-                  flipStage.appendChild(page);
-
-                } else if (withFlip) {
-                  // Flip animation
-                  isAnimating = true;
-                  const oldPage = flipStage.children[0];
-                  const newPage = document.createElement('div');
-                  newPage.className = 'page';
-                  newPage.appendChild(newCanvas);
-
-                  if (isForward) {
-                    oldPage.classList.add('flip-out');
-                    newPage.classList.add('flip-in');
-                  } else {
-                    oldPage.classList.add('flip-out-reverse');
-                    newPage.classList.add('flip-in-reverse');
-                  }
-
-                  flipStage.appendChild(newPage);
-
-                  setTimeout(() => {
-                    if (oldPage && oldPage.parentNode) {
-                      oldPage.parentNode.removeChild(oldPage);
-                    }
-                    newPage.classList.remove('flip-in', 'flip-in-reverse');
-                    isAnimating = false;
-                  }, 650);
-
-                } else {
-                  // Replace without animation
-                  const oldPage = flipStage.children[0];
-                  oldPage.parentNode.removeChild(oldPage);
-                  const page = document.createElement('div');
-                  page.className = 'page';
-                  page.appendChild(newCanvas);
-                  flipStage.appendChild(page);
-                }
-
-                currentPage = pageNumber;
-                pageNumEl.textContent = currentPage;
-              }
-
-              async function goToPage(pageNumber) {
-                if (isAnimating || !currentDoc || pageNumber < 1 || pageNumber > pageCount) return;
-
-                const isForward = pageNumber > currentPage;
-                await renderAndDisplayPage(pageNumber, true, isForward);
-              }
-
-              // Event listeners
-              document.addEventListener('keydown', (e) => {
-                if (viewer.classList.contains('show')) {
-                  if (e.key === 'ArrowRight' || e.key === 'Space') {
-                    e.preventDefault();
-                    goToPage(currentPage + 1);
-                  }
-                  if (e.key === 'ArrowLeft') {
-                    e.preventDefault();
-                    goToPage(currentPage - 1);
-                  }
-                  if (e.key === 'Escape') {
-                    e.preventDefault();
-                    closeViewer();
-                  }
-                }
-              });
-
-              viewer.addEventListener('click', (e) => {
-                if (e.target === viewer) {
-                  closeViewer();
-                }
-              });
-
-              // Initialize the gallery when the page loads
-              initializeGallery();
-            </script>
+              <div id="subscribeemailError" class="nl-msg err" role="alert"></div>
+              <div id="subscribeemailSuccess" class="nl-msg ok" role="status"></div>
+            </form>
+            <ul class="nl-facts">
+              <li><i class="bi bi-journal-text"></i> <span><strong id="issueCount">—</strong> editions published</span></li>
+              <li><i class="bi bi-calendar3"></i> Monthly</li>
+              <li><i class="bi bi-gift"></i> Free</li>
+            </ul>
           </div>
         </div>
-
       </div>
     </section>
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i>
-    </a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"></script>
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector(".php-email-form").addEventListener("submit", async function (event) {
-          event.preventDefault(); // Prevent default form submission
+    <!-- ================= Latest issue ================= -->
+    <section class="section tight" id="latest">
+      <div class="container-x">
+        <div class="nl-featured" id="featured" data-reveal></div>
+      </div>
+    </section>
 
-          // Select form elements
-          const name = document.querySelector("input[name='name']").value.trim();
-          const email = document.querySelector("input[name='email']").value.trim();
-          const message = document.querySelector("textarea[name='message']").value.trim();
+    <!-- ================= Archive ================= -->
+    <section class="section section-soft" id="archive">
+      <div class="container-x">
+        <div class="nl-archive-head">
+          <div>
+            <span class="eyebrow"><i class="bi bi-archive"></i> Archive</span>
+            <h2>Editions by year</h2>
+          </div>
+          <div class="nl-filters" id="filters" role="group" aria-label="Filter by year"></div>
+        </div>
+        <div class="nl-grid" id="gallery" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
 
-          // Construct the message payload
-          const payload = {
-            text: `New message from *${name}* (\`${email}\`):\n*Message:* \n${message}`
-          };
+  <!-- ================= Reader ================= -->
+  <div class="nl-viewer" id="viewer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="vtitle">
+    <div class="nl-vbar">
+      <div class="nl-vinfo">
+        <span id="vmonth"></span>
+        <h2 id="vtitle">Loading…</h2>
+      </div>
+      <div class="nl-vactions">
+        <span class="nl-vpage"><span class="lbl">Page </span><span id="pageNum">0</span> / <span id="pageCount">0</span></span>
+        <a class="nl-vbtn" id="downloadBtn" href="#" download target="_blank" rel="noopener"><i class="bi bi-download"></i><span class="lbl">Download</span></a>
+        <button class="nl-vbtn icon" id="closeBtn" type="button" aria-label="Close reader"><i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+    <div class="nl-vbody" id="vbody">
+      <button class="nl-vnav prev" id="prevBtn" type="button" aria-label="Previous page"><i class="bi bi-chevron-left"></i></button>
+      <div class="flip-stage notranslate" id="flipStage" aria-live="polite"></div>
+      <button class="nl-vnav next" id="nextBtn" type="button" aria-label="Next page"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
 
-          const url = "https://chat.googleapis.com/v1/spaces/AAAAsuHfdxs/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=hh4Kf50Psl37ZYFHx7KqLtTOUkhJYPt46w3IxcEyxKA";
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container-x">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/img/logo.png" alt="Criativo" class="flogo">
+          <p>Digital infrastructure for schools and colleges — built by educators, designed for the future.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/criativo-ai/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/criativoglobal?igsh=MXZtNDQ0bTlzaHZ5cg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5>Products</h5>
+          <ul>
+            <li><a href="digival.html">DigiVal</a></li>
+            <li><a href="abhyascrt.html">Abhyas CRT</a></li>
+            <li><a href="abhyasneetjee.html">Abhyas NEET / JEE</a></li>
+            <li><a href="abhyasvani.html">AbhyasVani</a></li>
+            <li><a href="abhyaslab.html">Abhyas Lab</a></li>
+            <li><a href="https://shortlist.criativo.ai/" target="_blank">Shortlist</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="news.html">Newsletters</a></li>
+            <li><a href="https://blog.criativo.ai/" target="_blank">Blog</a></li>
+            <li><a href="terms.html">Terms &amp; Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0;">© <span>Copyright</span> <strong>Criativo</strong> — All Rights Reserved.</p>
+        <a href="terms.html">Terms &amp; Conditions · Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 
-          try {
-            document.querySelector(".loading").style.display = "block"; // Show loading
+  <!-- Floating social rail -->
+  <div class="social-rail">
+    <a href="https://www.linkedin.com/company/criativo-ai/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/criativoglobal?igsh=MXZtNDQ0bTlzaHZ5cg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
 
-            const response = await fetch(url, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify(payload)
-            });
+  <!-- Scroll top -->
+  <a href="#top" class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
 
-            document.querySelector(".loading").style.display = "none"; // Hide loading
+  <!-- ================= Scripts ================= -->
+  <script>
+    // ---------- Theme toggle (light / dark) ----------
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const syncThemeIcon = () => {
+      const dark = root.getAttribute('data-theme') === 'dark';
+      const icon = themeToggle.querySelector('i');
+      if (icon) icon.className = dark ? 'bi bi-sun-fill' : 'bi bi-moon-stars';
+      themeToggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    };
+    syncThemeIcon();
+    themeToggle.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('cx-theme', next); } catch (e) {}
+      syncThemeIcon();
+    });
 
-            // Clear form values using IDs
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
+    // ---------- Header shadow, scroll-top, progress ----------
+    const header = document.getElementById('siteHeader');
+    const scrollTop = document.getElementById('scrollTop');
+    const progress = document.getElementById('scrollProgress');
+    const onScroll = () => {
+      const y = window.scrollY;
+      header.classList.toggle('scrolled', y > 12);
+      scrollTop.classList.toggle('show', y > 500);
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      if (progress) progress.style.width = (docH > 0 ? (y / docH) * 100 : 0) + '%';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-            if (response.ok) {
-              document.querySelector(".sent-message").style.display = "block"; // Show success message
-              document.querySelector(".error-message").style.display = "none"; // Hide error message
-              document.querySelector(".php-email-form").reset(); // Reset the form                    
-            } else {
-              throw new Error("Failed to send message.");
-            }
-          } catch (error) {
-            document.querySelector(".error-message").textContent = "Error: " + error.message;
-            document.querySelector(".error-message").style.display = "block"; // Show error message
-          }
-        });
+    // ---------- Mobile nav ----------
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // ---------- Reveal on scroll ----------
+    const reveals = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      reveals.forEach(el => io.observe(el));
+    } else {
+      reveals.forEach(el => el.classList.add('in'));
+    }
+  </script>
+
+  <!-- ================= Newsletters ================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    // Newest first. To publish a new issue, add an entry at the top.
+    const PDF_ITEMS = [
+      {
+        heading: 'September - 2026',
+        title: 'Teaching in the Age of AI: What Should Never Change',
+        url: 'pdfs/September Newsletter.pdf'
+      },
+      {
+        heading: 'August - 2026',
+        title: 'The Hidden Ingredient of Great Schools',
+        url: 'pdfs/Aug-Newsletter.pdf'
+      },
+      {
+        heading: 'July - 2026',
+        title: 'The Evolution of Global Learning',
+        url: 'pdfs/July-Newsletter.pdf'
+      },
+      {
+        heading: 'June - 2026',
+        title: 'The Smart Summer Plan',
+        url: 'pdfs/June Newsletter.pdf'
+      },
+      {
+        heading: 'May - 2026',
+        title: 'The New Education Blueprint',
+        url: 'pdfs/May Newsletter.pdf'
+      },
+      {
+        heading: 'April - 2026',
+        title: 'Why the Report Card Is No Longer Enough',
+        url: 'pdfs/April-Newsletter.pdf'
+      },
+      {
+        heading: 'March - 2026',
+        title: 'Inclusion in Action: Support That Works in Real Classrooms',
+        url: 'pdfs/March_Newsletter.pdf'
+      },
+      {
+        heading: 'February - 2026',
+        title: 'Assessment Is Changing in the UAE',
+        url: 'pdfs/February Newsletter.pdf'
+      },
+      {
+        heading: 'January - 2026',
+        title: 'EdTech That Sticks: What Schools Will Actually Adopt in 2026',
+        url: 'pdfs/January Newsletter.pdf'
+      },
+      {
+        heading: 'December - 2025',
+        title: 'Education with Purpose: Building Trust with Parents & Students',
+        url: 'pdfs/December Newsletter.pdf'
+      },
+      {
+        heading: 'November - 2025',
+        title: 'The tuition gap',
+        url: 'pdfs/November Newsletter.pdf'
+      },
+      {
+        heading: 'October - 2025',
+        title: 'Criativo Global Newsletter Beyond the Hype: Real Applications of AI in Education',
+        url: 'pdfs/Criativo_Newsletter_003.pdf'
+      },
+      {
+        heading: 'September - 2025',
+        title: 'Criativo Global Newsletter From Chalkboards To Ecosystems',
+        url: 'pdfs/Criativo-Newsletter-09_25_002.pdf'
+      },
+      {
+        heading: 'August - 2025',
+        title: 'Criativo Global Back To School Newsletter',
+        url: 'pdfs/newsletter1.pdf'
+      },
+    ];
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    const PDF_OPTS = { cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/cmaps/', cMapPacked: true };
+
+    // "September - 2026" -> { month: 'September', year: '2026', label: 'September 2026', short: 'Sep 2026' }
+    const parseHeading = (h) => {
+      const [month = '', year = ''] = (h || '').split('-').map(s => s.trim());
+      return { month, year, label: (month + ' ' + year).trim(), short: (month.slice(0, 3) + ' ' + year).trim() };
+    };
+    const items = PDF_ITEMS.map((it, i) => ({ ...it, index: i, ...parseHeading(it.heading) }));
+
+    document.getElementById('issueCount').textContent = items.length;
+
+    // ---------- Thumbnails (lazy, rendered from page 1 of each PDF) ----------
+    const thumbCache = new Map(); // url -> Promise<pdf page 1>
+    const getFirstPage = (url) => {
+      if (!thumbCache.has(url)) {
+        thumbCache.set(url, pdfjsLib.getDocument({ url, ...PDF_OPTS }).promise.then(pdf => pdf.getPage(1)));
+      }
+      return thumbCache.get(url);
+    };
+
+    async function renderThumb(thumbEl, url) {
+      try {
+        const page = await getFirstPage(url);
+        const base = page.getViewport({ scale: 1 });
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const width = Math.max(thumbEl.clientWidth, 240) * dpr;
+        const viewport = page.getViewport({ scale: width / base.width });
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+        thumbEl.appendChild(canvas);
+        requestAnimationFrame(() => canvas.classList.add('ready'));
+        thumbEl.classList.add('loaded');
+      } catch (err) {
+        console.error('Thumbnail failed for', url, err);
+        thumbEl.classList.add('failed');
+        thumbEl.querySelector('.nl-skel').innerHTML = '<i class="bi bi-file-earmark-pdf"></i>';
+      }
+    }
+
+    const thumbObserver = 'IntersectionObserver' in window
+      ? new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) { thumbObserver.unobserve(e.target); renderThumb(e.target, e.target.dataset.url); }
+          });
+        }, { rootMargin: '300px 0px' })
+      : null;
+    const queueThumb = (el) => thumbObserver ? thumbObserver.observe(el) : renderThumb(el, el.dataset.url);
+
+    const makeThumb = (item) => {
+      const t = document.createElement('div');
+      t.className = 'nl-thumb';
+      t.dataset.url = item.url;
+      t.innerHTML = '<div class="nl-skel" aria-hidden="true"></div>';
+      return t;
+    };
+
+    // ---------- Featured (latest) ----------
+    function renderFeatured(item) {
+      const box = document.getElementById('featured');
+      const thumb = makeThumb(item);
+      thumb.setAttribute('role', 'button');
+      thumb.setAttribute('tabindex', '0');
+      thumb.setAttribute('aria-label', 'Read ' + item.title);
+      thumb.addEventListener('click', () => openViewer(item.index));
+      thumb.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openViewer(item.index); } });
+
+      const info = document.createElement('div');
+      info.innerHTML = `
+        <span class="nl-badge"><i class="bi bi-stars"></i> Latest edition</span>
+        <span class="nl-when"></span>
+        <h2></h2>
+        <p>Read the full edition right here with our page-flip reader, or download the PDF to keep.</p>
+        <div class="nl-actions">
+          <button type="button" class="btn-x btn-primary-x" data-read>Read edition <i class="bi bi-book arr"></i></button>
+          <a class="btn-x btn-ghost-x" download target="_blank" rel="noopener"><i class="bi bi-download"></i> Download PDF</a>
+        </div>`;
+      info.querySelector('.nl-when').textContent = item.label;
+      info.querySelector('h2').textContent = item.title;
+      info.querySelector('a[download]').href = item.url;
+      info.querySelector('[data-read]').addEventListener('click', () => openViewer(item.index));
+
+      box.append(thumb, info);
+      queueThumb(thumb);
+    }
+
+    // ---------- Archive grid + year filter ----------
+    const gallery = document.getElementById('gallery');
+    const filtersEl = document.getElementById('filters');
+
+    function renderGrid() {
+      items.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'nl-card';
+        card.dataset.year = item.year;
+        card.tabIndex = 0;
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', item.label + ': ' + item.title);
+
+        const thumb = makeThumb(item);
+        const date = document.createElement('span');
+        date.className = 'nl-date';
+        date.textContent = item.short;
+        thumb.prepend(date);
+
+        const body = document.createElement('div');
+        body.className = 'nl-body';
+        const h3 = document.createElement('h3');
+        h3.textContent = item.title;
+        const read = document.createElement('span');
+        read.className = 'nl-read';
+        read.innerHTML = 'Read edition <i class="bi bi-arrow-right"></i>';
+        body.append(h3, read);
+
+        card.append(thumb, body);
+        card.addEventListener('click', () => openViewer(item.index));
+        card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openViewer(item.index); } });
+        gallery.appendChild(card);
+        queueThumb(thumb);
       });
 
-      async function subscribemailchat() {
-        const input = document.getElementById('subscribeemail');
-        const submail = input.value.trim();
-        const errorEl = document.getElementById('subscribeemailError');
-        const successEl = document.getElementById('subscribeemailSuccess');
+      // One button per year (newest first); the list shows only the selected year
+      const years = [...new Set(items.map(i => i.year).filter(Boolean))].sort((a, b) => b - a);
+      const selectYear = (y) => {
+        filtersEl.querySelectorAll('.nl-chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.year === y ? 'true' : 'false'));
+        gallery.querySelectorAll('.nl-card').forEach(c => { c.hidden = c.dataset.year !== y; });
+      };
+      years.forEach(y => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'nl-chip';
+        chip.dataset.year = y;
+        chip.textContent = y;
+        chip.addEventListener('click', () => selectYear(y));
+        filtersEl.appendChild(chip);
+      });
+      if (years.length) selectYear(years[0]);
+    }
 
-        // regex: fairly strict but simple
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (items.length) renderFeatured(items[0]);
+    renderGrid();
 
-        // Clear previous messages
-        errorEl.style.display = "none";
-        errorEl.innerText = "";
-        successEl.style.display = "none";
-        successEl.innerText = "";
+    // ---------- Reader ----------
+    const viewer = document.getElementById('viewer');
+    const vbody = document.getElementById('vbody');
+    const flipStage = document.getElementById('flipStage');
+    const vtitle = document.getElementById('vtitle');
+    const vmonth = document.getElementById('vmonth');
+    const pageNumEl = document.getElementById('pageNum');
+    const pageCountEl = document.getElementById('pageCount');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
 
-        // Basic empty check
-        if (!submail) {
-          errorEl.innerText = "Please enter your email.";
-          errorEl.style.display = "block";
-          input.focus();
-          return;
-        }
+    let currentItem = null;
+    let currentDoc = null;
+    let currentPage = 1;
+    let pageCount = 0;
+    let isAnimating = false;
+    let lastFocus = null;
+    let loadToken = 0;
 
-        // Regex validation
-        if (!emailPattern.test(submail)) {
-          errorEl.innerText = "Please enter a valid email address.";
-          errorEl.style.display = "block";
-          input.focus();
-          return;
-        }
+    function openViewer(index) {
+      currentItem = items[index];
+      if (!currentItem) return;
+      lastFocus = document.activeElement;
+      vmonth.textContent = currentItem.label;
+      vtitle.textContent = currentItem.title;
+      downloadBtn.href = currentItem.url;
+      viewer.classList.add('show');
+      viewer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+      loadDocument(currentItem.url);
+    }
 
-        // Passed validation — show a loading indicator if you have one
-        const loading = document.querySelector(".loading");
-        if (loading) loading.style.display = "block";
+    function closeViewer() {
+      viewer.classList.remove('show');
+      viewer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      loadToken++;
+      resetReader();
+      if (lastFocus) lastFocus.focus();
+    }
 
+    function resetReader() {
+      flipStage.innerHTML = '';
+      currentDoc = null;
+      currentPage = 1;
+      pageCount = 0;
+      isAnimating = false;
+      pageNumEl.textContent = '0';
+      pageCountEl.textContent = '0';
+      updateNav();
+    }
 
-const d = new Date();
+    function updateNav() {
+      prevBtn.disabled = !currentDoc || currentPage <= 1;
+      nextBtn.disabled = !currentDoc || currentPage >= pageCount;
+    }
 
-const payload = {
-  email: submail,
-  datetime: 
-    d.getFullYear() + "-" +
-    ("0" + (d.getMonth() + 1)).slice(-2) + "-" +
-    ("0" + d.getDate()).slice(-2) + " " +
-    ("0" + d.getHours()).slice(-2) + ":" +
-    ("0" + d.getMinutes()).slice(-2) + ":" +
-    ("0" + d.getSeconds()).slice(-2)
-};
-        const url = "https://script.google.com/macros/s/AKfycbwTnCnnCemRWDKDR_WhSIs1dzN_Ud7j6NaKUbmgaM1ylG4TwhB9V7TpAHVakiVHvzp_eQ/exec"; // your webhook
-
-        try {
-          const response = await fetch(url, {
-            method: "POST",
-            body: JSON.stringify(payload)
-          });
-
-          if (response.ok) {
-            successEl.innerText = "✅ Your email has been successfully subscribed to Criativo.ai.";
-            successEl.style.display = "block";
-            input.value = "";
-          } else {
-            const errorText = await response.text();
-            errorEl.innerText = "Failed to send subscription. " + errorText;
-            errorEl.style.display = "block";
-          }
-        } catch (error) {
-          errorEl.innerText = "Error: " + error.message;
-          errorEl.style.display = "block";
-        } finally {
-          if (loading) loading.style.display = "none";
+    async function loadDocument(url) {
+      resetReader();
+      const token = ++loadToken;
+      flipStage.innerHTML = '<div class="page"><p class="nl-vstatus">Loading…</p></div>';
+      try {
+        const doc = await pdfjsLib.getDocument({ url, ...PDF_OPTS }).promise;
+        if (token !== loadToken) return; // reader was closed or switched
+        currentDoc = doc;
+        pageCount = doc.numPages;
+        pageCountEl.textContent = pageCount;
+        flipStage.innerHTML = '';
+        await showPage(1, false);
+      } catch (err) {
+        console.error('Failed to load document:', err);
+        if (token === loadToken) {
+          flipStage.innerHTML = '<div class="page"><p class="nl-vstatus">Sorry, this edition could not be loaded. Try the download button instead.</p></div>';
         }
       }
+    }
 
+    async function renderPageCanvas(n) {
+      const page = await currentDoc.getPage(n);
+      const base = page.getViewport({ scale: 1 });
+      const availW = flipStage.clientWidth || vbody.clientWidth;
+      const availH = flipStage.clientHeight || vbody.clientHeight;
+      const fit = Math.min(availW / base.width, availH / base.height);
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const viewport = page.getViewport({ scale: fit * dpr });
+      const canvas = document.createElement('canvas');
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      canvas.style.width = (viewport.width / dpr) + 'px';
+      canvas.style.height = (viewport.height / dpr) + 'px';
+      await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+      return canvas;
+    }
 
+    async function showPage(n, animate = true) {
+      if (isAnimating || !currentDoc || n < 1 || n > pageCount) return;
+      const token = loadToken;
+      const forward = n > currentPage;
+      isAnimating = true;
+      let canvas;
+      try {
+        canvas = await renderPageCanvas(n);
+      } catch (err) {
+        console.error('Failed to render page', n, err);
+        isAnimating = false;
+        return;
+      }
+      if (token !== loadToken) { isAnimating = false; return; }
 
-    </script>
+      const newPage = document.createElement('div');
+      newPage.className = 'page';
+      newPage.appendChild(canvas);
+      const oldPage = flipStage.firstElementChild;
 
-    <!--    read more-->
+      if (oldPage && animate) {
+        oldPage.classList.add(forward ? 'flip-out' : 'flip-out-reverse');
+        newPage.classList.add(forward ? 'flip-in' : 'flip-in-reverse');
+        flipStage.appendChild(newPage);
+        setTimeout(() => {
+          oldPage.remove();
+          newPage.classList.remove('flip-in', 'flip-in-reverse');
+          isAnimating = false;
+        }, 620);
+      } else {
+        flipStage.replaceChildren(newPage);
+        isAnimating = false;
+      }
+      currentPage = n;
+      pageNumEl.textContent = n;
+      updateNav();
+    }
 
-    <script>
-      document.querySelectorAll(".readMoreBtn").forEach((button) => {
-        button.addEventListener("click", function (event) {
-          event.preventDefault();
+    prevBtn.addEventListener('click', () => showPage(currentPage - 1));
+    nextBtn.addEventListener('click', () => showPage(currentPage + 1));
+    closeBtn.addEventListener('click', closeViewer);
+    viewer.addEventListener('click', (e) => { if (e.target === vbody) closeViewer(); });
 
-          // Get the target hidden content ID from the data-target attribute
-          const targetId = this.getAttribute("data-target");
-          const hiddenContent = document.getElementById(targetId);
+    document.addEventListener('keydown', (e) => {
+      if (!viewer.classList.contains('show')) return;
+      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); showPage(currentPage + 1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); showPage(currentPage - 1); }
+      else if (e.key === 'Escape') { e.preventDefault(); closeViewer(); }
+    });
 
-          if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-            hiddenContent.style.display = "block";
-            this.innerText = "Read Less";
-          } else {
-            hiddenContent.style.display = "none";
-            this.innerText = "Read More";
-          }
+    // Swipe to turn pages on touch screens
+    let touchX = null;
+    vbody.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+    vbody.addEventListener('touchend', (e) => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      touchX = null;
+      if (Math.abs(dx) > 50) showPage(currentPage + (dx < 0 ? 1 : -1));
+    });
 
+    // Re-fit the current page when the window is resized
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      if (!viewer.classList.contains('show') || !currentDoc) return;
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(async () => {
+        if (isAnimating) return;
+        const canvas = await renderPageCanvas(currentPage);
+        const page = document.createElement('div');
+        page.className = 'page';
+        page.appendChild(canvas);
+        flipStage.replaceChildren(page);
+      }, 200);
+    });
 
+    // ---------- Newsletter subscription ----------
+    document.getElementById('subscribeForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const input = document.getElementById('subscribeemail');
+      const btn = document.getElementById('subscribeBtn');
+      const errorEl = document.getElementById('subscribeemailError');
+      const successEl = document.getElementById('subscribeemailSuccess');
+      const submail = input.value.trim();
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const show = (el, msg) => { el.textContent = msg; el.style.display = 'block'; };
 
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      errorEl.style.display = 'none';
+      successEl.style.display = 'none';
 
-    <!--social media links-
-    <div class="position-absolute top-50  translate-middle wrapper_main">
-    <div class="wrapper d-flex flex-column">
-    <a href="https://www.linkedin.com/company/criativo-ai/" class="icon github smeddia" target="_blank"   >
-    <div class="tooltip">LinkedIn</div>
-    <span><i class="fab fa-linkedin"></i></span>
-  </a>
-  <a href="https://www.instagram.com/criativoglobal?igsh=MXZtNDQ0bTlzaHZ5cg==" target="_blank"  class="icon instagram smeddia">
-    <div class="tooltip">Instagram</div>
-    <span><i class="fab fa-instagram"></i></span>
-  </a>
-  
-</div>
-    </div>
- end -->
+      if (!submail) { show(errorEl, 'Please enter your email.'); input.focus(); return; }
+      if (!emailPattern.test(submail)) { show(errorEl, 'Please enter a valid email address.'); input.focus(); return; }
+
+      const d = new Date();
+      const pad = (n) => ('0' + n).slice(-2);
+      const payload = {
+        email: submail,
+        datetime: d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' +
+          pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds())
+      };
+      const url = 'https://script.google.com/macros/s/AKfycbwTnCnnCemRWDKDR_WhSIs1dzN_Ud7j6NaKUbmgaM1ylG4TwhB9V7TpAHVakiVHvzp_eQ/exec';
+
+      btn.disabled = true;
+      try {
+        const response = await fetch(url, { method: 'POST', body: JSON.stringify(payload) });
+        if (response.ok) {
+          show(successEl, '✅ You\'re subscribed! Look out for the next edition in your inbox.');
+          input.value = '';
+        } else {
+          show(errorEl, 'Failed to send subscription. ' + await response.text());
+        }
+      } catch (error) {
+        show(errorEl, 'Error: ' + error.message);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+  <!-- Google Translate (EN / AR / FR) -->
+  <script src="assets/js/translate.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
