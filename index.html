@@ -776,7 +776,7 @@
 
           // Rate limited: keep the form filled and show how long to wait
           if (response.status === 429) {
-            showRateLimit(await getRetryAfterSeconds(response));
+            showRateLimit();
             return;
           }
 
@@ -805,53 +805,21 @@
       });
     });
 
-    // Read wait time from the Retry-After header or a JSON body (retryAfter / retry_after)
-    async function getRetryAfterSeconds(response) {
-      const header = response.headers.get("Retry-After");
-      if (header) {
-        const secs = parseInt(header, 10);
-        if (!isNaN(secs)) return secs;
-        const date = Date.parse(header);
-        if (!isNaN(date)) return Math.max(1, Math.ceil((date - Date.now()) / 1000));
-      }
-      try {
-        const data = await response.json();
-        const secs = parseInt(data.retryAfter ?? data.retry_after ?? data.timeout, 10);
-        if (!isNaN(secs)) return secs;
-      } catch (e) {}
-      return 60;
-    }
-
-    let rateLimitTimer = null;
-    function showRateLimit(seconds) {
+    // Rate limited: show a fixed message and block resubmits for 15 minutes
+    function showRateLimit() {
       const errEl = document.querySelector(".php-email-form .error-message");
       const btn = document.querySelector(".php-email-form button[type='submit']");
-      let remaining = Math.max(1, seconds);
 
-      clearInterval(rateLimitTimer);
+      if (errEl) {
+        errEl.textContent = "Too many requests. Please try again after 15 minutes.";
+        errEl.style.display = "block";
+      }
       if (btn) btn.disabled = true;
 
-      const render = function () {
-        const mins = Math.floor(remaining / 60);
-        const secs = remaining % 60;
-        const wait = mins > 0 ? mins + "m " + ("0" + secs).slice(-2) + "s" : secs + "s";
-        if (errEl) {
-          errEl.textContent = "Too many requests. Please try again in " + wait + ".";
-          errEl.style.display = "block";
-        }
-      };
-      render();
-
-      rateLimitTimer = setInterval(function () {
-        remaining--;
-        if (remaining <= 0) {
-          clearInterval(rateLimitTimer);
-          if (btn) btn.disabled = false;
-          if (errEl) { errEl.textContent = ""; errEl.style.display = "none"; }
-          return;
-        }
-        render();
-      }, 1000);
+      setTimeout(function () {
+        if (btn) btn.disabled = false;
+        if (errEl) { errEl.textContent = ""; errEl.style.display = "none"; }
+      }, 15 * 60 * 1000);
     }
 
     // Newsletter subscription (preserved)
