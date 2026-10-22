@@ -760,15 +760,11 @@
         };
         const sheetUrl = "https://script.google.com/macros/s/AKfycbxgGSV5-BESMunfCL5Us-xvZp8hUVO0iO3Md7PVS_PPNNqGtCZmtta6_ygbpMo9IIGFvw/exec";
 
+        if (sentEl) sentEl.style.display = "none";
+        if (errEl) errEl.style.display = "none";
+
         try {
           if (loadingEl) loadingEl.style.display = "block";
-
-          await fetch(sheetUrl, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(sheetPayload)
-          });
 
           const response = await fetch(chatUrl, {
             method: "POST",
@@ -778,23 +774,85 @@
 
           if (loadingEl) loadingEl.style.display = "none";
 
+          // Rate limited: keep the form filled and show how long to wait
+          if (response.status === 429) {
+            showRateLimit(await getRetryAfterSeconds(response));
+            return;
+          }
+
+          if (!response.ok) {
+            throw new Error("Failed to send message.");
+          }
+
+          // Log to the sheet only once the request has been accepted
+          fetch(sheetUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(sheetPayload)
+          }).catch(function () {});
+
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("phone").value = "";
           document.getElementById("message").value = "";
 
-          if (response.ok) {
-            if (sentEl) sentEl.style.display = "block";
-            if (errEl) errEl.style.display = "none";
-          } else {
-            throw new Error("Failed to send message.");
-          }
+          if (sentEl) sentEl.style.display = "block";
         } catch (error) {
           if (loadingEl) loadingEl.style.display = "none";
           if (errEl) { errEl.textContent = "Error: " + error.message; errEl.style.display = "block"; }
         }
       });
     });
+
+    // Read wait time from the Retry-After header or a JSON body (retryAfter / retry_after)
+    async function getRetryAfterSeconds(response) {
+      const header = response.headers.get("Retry-After");
+      if (header) {
+        const secs = parseInt(header, 10);
+        if (!isNaN(secs)) return secs;
+        const date = Date.parse(header);
+        if (!isNaN(date)) return Math.max(1, Math.ceil((date - Date.now()) / 1000));
+      }
+      try {
+        const data = await response.json();
+        const secs = parseInt(data.retryAfter ?? data.retry_after ?? data.timeout, 10);
+        if (!isNaN(secs)) return secs;
+      } catch (e) {}
+      return 60;
+    }
+
+    let rateLimitTimer = null;
+    function showRateLimit(seconds) {
+      const errEl = document.querySelector(".php-email-form .error-message");
+      const btn = document.querySelector(".php-email-form button[type='submit']");
+      let remaining = Math.max(1, seconds);
+
+      clearInterval(rateLimitTimer);
+      if (btn) btn.disabled = true;
+
+      const render = function () {
+        const mins = Math.floor(remaining / 60);
+        const secs = remaining % 60;
+        const wait = mins > 0 ? mins + "m " + ("0" + secs).slice(-2) + "s" : secs + "s";
+        if (errEl) {
+          errEl.textContent = "Too many requests. Please try again in " + wait + ".";
+          errEl.style.display = "block";
+        }
+      };
+      render();
+
+      rateLimitTimer = setInterval(function () {
+        remaining--;
+        if (remaining <= 0) {
+          clearInterval(rateLimitTimer);
+          if (btn) btn.disabled = false;
+          if (errEl) { errEl.textContent = ""; errEl.style.display = "none"; }
+          return;
+        }
+        render();
+      }, 1000);
+    }
 
     // Newsletter subscription (preserved)
     async function subscribemailchat() {
